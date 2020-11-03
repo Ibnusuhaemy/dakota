@@ -10,10 +10,8 @@ gulp compile
 ```
 
 #### Library yang digunakan
-- Bootstrap Reboot 4.5.2
-- Bootstrap Grid 4.5.2
+- Bootstrap 4.5.2
 - JQuery 3.5.1
-- ScrolltoFixed 1.0.6
 
 #### Embed css
 ```
