@@ -31,7 +31,8 @@
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "popper.js": "^1.14.3",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.0",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "gulp-load-plugins": "^2.0.2",
