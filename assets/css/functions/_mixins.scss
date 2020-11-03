@@ -1,0 +1,52 @@
+// Notes :
+// - Use px size for width or height of an elements
+// - Use rem size for fonts (1rem = 1px)
+// - Use em for padding and margin (1em = 16px for general margin except for heading 1em = 30px)
+
+// Font Size : rem
+@mixin font-size($fontSize) {
+    font-size: ($fontSize / 16) + rem;
+}
+
+// Media Queries
+@mixin media-query($width, $type: min) {
+    @if map-has-key($grid-breakpoints, $width) {
+        $width: map-get($grid-breakpoints, $width);
+        @if $type == min {
+            $width: $width + .02px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+@mixin media-query-height($height, $type: min) {
+    @if map-has-key($grid-breakpoints, $height) {
+        $height: map-get($grid-breakpoints, $height);
+        @if $type == min {
+            $height: $height + .02px;
+        }
+        @media only screen and (#{$type}-height: $height) {
+            @content;
+        }
+    }
+}
+
+@mixin media-query-width-height($width, $height, $wtype: min, $htype: min) {
+    @if map-has-key($grid-breakpoints, $width) and map-has-key($grid-breakpoints, $height) {
+        $width: map-get($grid-breakpoints, $width);
+        @if $wtype == min {
+            $width: $width + .02px;
+        }
+
+        $height: map-get($grid-breakpoints, $height);
+        @if $htype == min {
+            $height: $height + .02px;
+        }
+
+        @media only screen and (#{$wtype}-width: $width) and (#{$htype}-height: $height) {
+            @content;
+        }
+    }
+}
