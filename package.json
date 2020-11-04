@@ -14,6 +14,7 @@
   "author": "Ibnu",
   "license": "UNLICENSED",
   "dependencies": {
+    "@popperjs/core": "^2.5.4",
     "bootstrap": "^4.5.2",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.0.0",
@@ -30,7 +31,7 @@
     "gulp-watch": "^5.0.1",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
-    "popper.js": "^1.14.3",
+    "popper.js": "^1.16.1",
     "run-sequence": "^2.2.0",
     "slick-carousel": "^1.8.1"
   },
