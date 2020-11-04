@@ -13,30 +13,30 @@
 
 @font-face {
   font-family: 'Qanelas-Extra-Bold';
-  src: url("qanelassoftextrabold.eot");
+  src: url("../fonts/qanelassoftextrabold.eot");
   /* IE9 Compat Modes */
-  src: url("qanelassoftextrabold.eot?#iefix") format("embedded-opentype"), url("qanelassoftextrabold.woff2") format("woff2"), url("qanelassoftextrabold.woff") format("woff"), url("qanelassoftextrabold.ttf") format("truetype"), url("qanelassoftextrabold.svg#qanelassoftextrabold") format("svg");
+  src: url("../fonts/qanelassoftextrabold.eot?#iefix") format("embedded-opentype"), url("../fonts/qanelassoftextrabold.woff2") format("woff2"), url("../fonts/qanelassoftextrabold.woff") format("woff"), url("../fonts/qanelassoftextrabold.ttf") format("truetype"), url("../fonts/qanelassoftextrabold.svg#qanelassoftextrabold") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
   font-family: 'Qanelas-Bold';
-  src: url("qanelassoftbold.eot");
+  src: url("../fonts/qanelassoftbold.eot");
   /* IE9 Compat Modes */
-  src: url("qanelassoftbold.eot?#iefix") format("embedded-opentype"), url("qanelassoftbold.woff2") format("woff2"), url("qanelassoftbold.woff") format("woff"), url("qanelassoftbold.ttf") format("truetype"), url("qanelassoftbold.svg#qanelassoftbold") format("svg");
+  src: url("../fonts/qanelassoftbold.eot?#iefix") format("embedded-opentype"), url("../fonts/qanelassoftbold.woff2") format("woff2"), url("../fonts/qanelassoftbold.woff") format("woff"), url("../fonts/qanelassoftbold.ttf") format("truetype"), url("../fonts/qanelassoftbold.svg#qanelassoftbold") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
   font-family: 'Helvetica-Light';
-  src: url("helveticanowdisplaylight.eot");
+  src: url("../fonts/helveticanowdisplaylight.eot");
   /* IE9 Compat Modes */
-  src: url("helveticanowdisplaylight.eot?#iefix") format("embedded-opentype"), url("helveticanowdisplaylight.woff2") format("woff2"), url("helveticanowdisplaylight.woff") format("woff"), url("helveticanowdisplaylight.ttf") format("truetype"), url("helveticanowdisplaylight.svg#helveticanowdisplaylight") format("svg");
+  src: url("../fonts/helveticanowdisplaylight.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticanowdisplaylight.woff2") format("woff2"), url("../fonts/helveticanowdisplaylight.woff") format("woff"), url("../fonts/helveticanowdisplaylight.ttf") format("truetype"), url("../fonts/helveticanowdisplaylight.svg#helveticanowdisplaylight") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
   font-family: 'Helvetica-Bold';
-  src: url("helveticanowdisplaybold.eot");
+  src: url("../fonts/helveticanowdisplaybold.eot");
   /* IE9 Compat Modes */
-  src: url("helveticanowdisplaybold.eot?#iefix") format("embedded-opentype"), url("helveticanowdisplaybold.woff2") format("woff2"), url("helveticanowdisplaybold.woff") format("woff"), url("helveticanowdisplaybold.ttf") format("truetype"), url("helveticanowdisplaybold.svg#helveticanowdisplaybold") format("svg");
+  src: url("../fonts/helveticanowdisplaybold.eot?#iefix") format("embedded-opentype"), url("../fonts/helveticanowdisplaybold.woff2") format("woff2"), url("../fonts/helveticanowdisplaybold.woff") format("woff"), url("../fonts/helveticanowdisplaybold.ttf") format("truetype"), url("../fonts/helveticanowdisplaybold.svg#helveticanowdisplaybold") format("svg");
   /* Legacy iOS */ }
 
 h1,
