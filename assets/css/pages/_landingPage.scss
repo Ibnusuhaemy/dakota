@@ -38,6 +38,7 @@
 }
 //slider hero ----------------------------------------------
 .slider{
+    outline: none;
 
     &__row{
         width:100%;
@@ -77,7 +78,7 @@
 // who used ----------------------------
 .who-used{
     background: $color-light-green;
-    padding: 70px 0 150px 0;
+    padding: 70px 0 70px 0;
     position: relative;
 
     &__title{
@@ -131,6 +132,14 @@
 //statistict ------------------------------
 .statistict{
 
+    
+    &__img-person {
+        height: 600px;
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        left: -80px;
+    }
     &__content{
         padding:70px 0 0 0;
 
@@ -152,6 +161,7 @@
             }
             &-display-3{
                 width:120px;
+                margin-top: 15px;
             }
         }
 
@@ -245,10 +255,162 @@
             img{
                 width: 250px;
                 margin: auto;
-                box-shadow: 1px 6px 10px 0 rgba(0,0,0,100%);
+                box-shadow: 0px 20px 8px -16px rgba($color-soft-black,.5);
                 border-radius: 100%;
+            }
+        }
+
+        &__content{
+            &--text{
+                margin-top:70px;
+                margin-left: 12px;
+            }
+        }
+
+        &__quote{
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left:0;
+        }
+    }
+    
+    .slick-next, .slick-prev {
+        top: 40%;
+    }
+    .slick-prev{
+        background: url(../images/arrow.svg);
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-family: 'Helvetica-Light';
+        font-size: 90px;
+        color: #FFDC11;
+    }
+    .slick-prev:before {
+        content: '<' !important;
+    }
+    .slick-next:before {
+        content: '>' !important;
+    }
+}
+
+//partner ---------------------------------------------
+.partner{
+    background: $color-soft-white;
+    padding: 70px 0 70px 0;
+    position: relative;
+
+    &__title{
+        z-index:10;
+        position: relative;
+
+        h2{
+            display: flex;
+            flex-direction: row;
+            max-width: 1140px;
+            margin: 0 auto;
+            
+            &:before{
+                content: "";
+                flex: 1 1;
+                border-bottom: 1px solid $color-soft-black;
+                margin: auto;
+                position: absolute;
+                bottom: -18px;
+                left: 0;
+                margin-right: 20px;
+                width: 140px;
             }
         }
     }
 
+    &__bg {
+        position: absolute;
+        right: 0;
+        bottom: -90px;
+        width: 350px;
+    }
+
+    &__slider{
+        &--box{
+            padding:50px 0;
+        }
+    }
+
+    
+    .slick-slide{
+        outline: none;
+        
+        img{
+            display: block;
+            width: auto;
+            height: 100px;
+            margin: 0 auto;
+        }
+    }
+
+
+
+}
+
+//contact ---------------------------------------------
+.contact{
+    padding: 70px 0 70px 0;
+    position: relative;
+
+    &__title{
+        z-index:10;
+        position: relative;
+
+        h2{
+            display: flex;
+            flex-direction: row;
+            max-width: 1140px;
+            margin: 0 auto;
+            
+            &:before{
+                content: "";
+                flex: 1 1;
+                border-bottom: 1px solid $color-soft-black;
+                margin: auto;
+                position: absolute;
+                bottom: -18px;
+                left: 0;
+                margin-right: 20px;
+                width: 140px;
+            }
+        }
+    }
+
+    &__box{
+        margin:100px;
+
+    }
+    
+    &__content{
+        position: relative;
+        z-index: 10;
+    }
+
+    &__bg{
+        position: absolute;
+        left: -100px;
+        top: -40px;
+        height: 550px;
+    }
+
+    .form{
+        &-control{
+            border-color:$color-green;
+            border-radius: 12px;
+            &::placeholder{
+                color:$color-green;
+            }
+        }
+
+        &-btn{
+            padding: 24px 64px;
+        }
+    }
 }

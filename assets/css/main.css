@@ -118,23 +118,22 @@ strong {
       .header__dropdown .dropdown-toggle::after {
         display: none; }
 
-.slider__row {
-  width: 100%;
-  margin: 0; }
-
-.slider__image {
-  width: 100%;
-  height: auto; }
-
-.slider__content .caption {
-  margin: 30px 0 0 10px; }
-
-.slider__content .hero__button {
-  margin: 20px 0 0 10px; }
-  .slider__content .hero__button .btn--yellow {
-    height: fit-content;
-    padding: 16px 24px;
-    margin: auto 10px auto 0; }
+.slider {
+  outline: none; }
+  .slider__row {
+    width: 100%;
+    margin: 0; }
+  .slider__image {
+    width: 100%;
+    height: auto; }
+  .slider__content .caption {
+    margin: 30px 0 0 10px; }
+  .slider__content .hero__button {
+    margin: 20px 0 0 10px; }
+    .slider__content .hero__button .btn--yellow {
+      height: fit-content;
+      padding: 16px 24px;
+      margin: auto 10px auto 0; }
 
 .js-hero-slider .slick-prev,
 .js-hero-slider .slick-next {
@@ -142,7 +141,7 @@ strong {
 
 .who-used {
   background: #57c479;
-  padding: 70px 0 150px 0;
+  padding: 70px 0 70px 0;
   position: relative; }
   .who-used__title {
     z-index: 10;
@@ -175,6 +174,13 @@ strong {
     border: none;
     border-radius: 100px; }
 
+.statistict__img-person {
+  height: 600px;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  left: -80px; }
+
 .statistict__content {
   padding: 70px 0 0 0; }
   .statistict__content--text {
@@ -187,7 +193,8 @@ strong {
   .statistict__content--img-display-2 {
     width: 150px; }
   .statistict__content--img-display-3 {
-    width: 120px; }
+    width: 120px;
+    margin-top: 15px; }
   .statistict__content--body-one {
     position: absolute;
     top: 45px;
@@ -249,7 +256,104 @@ strong {
     .they-used .slider__image img {
       width: 250px;
       margin: auto;
-      box-shadow: 1px 6px 10px 0 black;
+      box-shadow: 0px 20px 8px -16px rgba(24, 27, 23, 0.5);
       border-radius: 100%; }
+    .they-used .slider__content--text {
+      margin-top: 70px;
+      margin-left: 12px; }
+    .they-used .slider__quote {
+      height: 50px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  .they-used .slick-next, .they-used .slick-prev {
+    top: 40%; }
+  .they-used .slick-prev {
+    background: url(../images/arrow.svg); }
+  .they-used .slick-prev:before,
+  .they-used .slick-next:before {
+    font-family: 'Helvetica-Light';
+    font-size: 90px;
+    color: #FFDC11; }
+  .they-used .slick-prev:before {
+    content: '<' !important; }
+  .they-used .slick-next:before {
+    content: '>' !important; }
+
+.partner {
+  background: #f6f6f6;
+  padding: 70px 0 70px 0;
+  position: relative; }
+  .partner__title {
+    z-index: 10;
+    position: relative; }
+    .partner__title h2 {
+      display: flex;
+      flex-direction: row;
+      max-width: 1140px;
+      margin: 0 auto; }
+      .partner__title h2:before {
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid #181b17;
+        margin: auto;
+        position: absolute;
+        bottom: -18px;
+        left: 0;
+        margin-right: 20px;
+        width: 140px; }
+  .partner__bg {
+    position: absolute;
+    right: 0;
+    bottom: -90px;
+    width: 350px; }
+  .partner__slider--box {
+    padding: 50px 0; }
+  .partner .slick-slide {
+    outline: none; }
+    .partner .slick-slide img {
+      display: block;
+      width: auto;
+      height: 100px;
+      margin: 0 auto; }
+
+.contact {
+  padding: 70px 0 70px 0;
+  position: relative; }
+  .contact__title {
+    z-index: 10;
+    position: relative; }
+    .contact__title h2 {
+      display: flex;
+      flex-direction: row;
+      max-width: 1140px;
+      margin: 0 auto; }
+      .contact__title h2:before {
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid #181b17;
+        margin: auto;
+        position: absolute;
+        bottom: -18px;
+        left: 0;
+        margin-right: 20px;
+        width: 140px; }
+  .contact__box {
+    margin: 100px; }
+  .contact__content {
+    position: relative;
+    z-index: 10; }
+  .contact__bg {
+    position: absolute;
+    left: -100px;
+    top: -40px;
+    height: 550px; }
+  .contact .form-control {
+    border-color: #1a8466;
+    border-radius: 12px; }
+    .contact .form-control::placeholder {
+      color: #1a8466; }
+  .contact .form-btn {
+    padding: 24px 64px; }
 
 /*# sourceMappingURL=main.css.map */
