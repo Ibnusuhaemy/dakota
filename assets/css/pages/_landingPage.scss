@@ -530,12 +530,9 @@
         background-size: cover;
 
         .container{
-            padding: 0;
-            margin: 0;
-        }
-
-        &--1{
-            margin-left:auto;
+            .row {
+                justify-content: flex-end;
+            }
         }
 
         &--email{
@@ -950,18 +947,6 @@
         
     /// Footer ----------------------------------------------------------
 
-    .footer{
-        &__inner{
-
-            &--1{
-                margin-left:auto;
-            }
-            
-            &--2{
-                margin-right:auto;
-            }
-        }
-    }
 }
 
 
@@ -971,9 +956,6 @@
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
 @include media-query(md) {
-
-    
-
     
     //who-used ---------------------------------------------
     .who-used{
@@ -1106,6 +1088,27 @@
             }
             &--address{
                 overflow-wrap: break-word;
+            }
+        }
+    }
+}
+
+@include media-query(sm) {
+
+    /// Footer ----------------------------------------------------------
+    .footer{
+        &__inner{
+            background-position: bottom center;
+            background-size: auto;
+            &--1{
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-bottom: 40px;
+            }
+            
+            &--2{
+                padding-left: 30px;
+                padding-right: 30px;
             }
         }
     }

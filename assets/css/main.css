@@ -446,11 +446,8 @@ strong {
   filter: grayscale(100%);
   color: white;
   background-size: cover; }
-  .footer__inner .container {
-    padding: 0;
-    margin: 0; }
-  .footer__inner--1 {
-    margin-left: auto; }
+  .footer__inner .container .row {
+    justify-content: flex-end; }
   .footer__inner--email {
     margin-top: 6px;
     overflow-wrap: break-word; }
@@ -644,11 +641,7 @@ strong {
       .contact .form-control::placeholder {
         color: #1a8466; }
     .contact .form-btn {
-      padding: 24px 64px; }
-  .footer__inner--1 {
-    margin-left: auto; }
-  .footer__inner--2 {
-    margin-right: auto; } }
+      padding: 24px 64px; } }
 
 @media only screen and (max-width: 767.98px) {
   .who-used__title h2:before {
@@ -710,5 +703,17 @@ strong {
       overflow-wrap: break-word; }
     .footer__inner--address {
       overflow-wrap: break-word; } }
+
+@media only screen and (max-width: 575.98px) {
+  .footer__inner {
+    background-position: bottom center;
+    background-size: auto; }
+    .footer__inner--1 {
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 40px; }
+    .footer__inner--2 {
+      padding-left: 30px;
+      padding-right: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
