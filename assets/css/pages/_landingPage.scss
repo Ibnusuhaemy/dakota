@@ -35,6 +35,9 @@
             }
         }
     }
+    .dropdown-menu.show{
+        left:-15px;
+    }
 }
 //slider hero ----------------------------------------------
 .slider{
@@ -69,9 +72,30 @@
 }
 .js-hero-slider{
     //button slick prev and next
+    padding:30px 0;
     .slick-prev,
     .slick-next{
         display: none !important;
+    }
+
+    .slick-dots{
+        bottom:0;
+
+        .slick-active{
+            button:before{
+                background: $color-yellow;
+            }
+        }
+        li{
+            button:before{
+                opacity: 1;
+                color: transparent;
+                border-radius: 100%;
+                background: $color-light-yellow;
+                width: 16px;
+                height: 16px;
+            }
+        }
     }
 }
 
@@ -276,22 +300,33 @@
     }
     
     .slick-next, .slick-prev {
-        top: 40%;
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        background-size: contain !important;
+        transition:all ease .2s;
     }
-    .slick-prev{
-        background: url(../images/arrow.svg);
-    }
+
     .slick-prev:before,
     .slick-next:before {
-        font-family: 'Helvetica-Light';
-        font-size: 90px;
-        color: #FFDC11;
+        opacity:0;
     }
-    .slick-prev:before {
-        content: '<' !important;
+    .slick-prev {
+        left:-50px;
+        background: url(../images/arrow.svg);
+
+        &:hover{
+            transform: scale(1.5) translate(-7px, -7px);
+        }
     }
-    .slick-next:before {
-        content: '>' !important;
+    .slick-next {
+        background: url(../images/arrow.svg);
+        right:-50px;
+        transform: rotate(180deg) translateY(20px);
+        
+        &:hover{
+            transform: rotate(180deg) scale(1.5) translate(-7px, 7px);
+        }
     }
 }
 
@@ -411,6 +446,81 @@
 
         &-btn{
             padding: 24px 64px;
+        }
+    }
+}
+/// Footer ----------------------------------------------------------
+
+.footer{
+    &__upper{
+        background: $color-soft-black;
+        padding: 16px 0;
+        color:white;
+
+        .language{
+            margin: auto 0;
+
+            &__text{
+                text-transform: capitalize;
+                display: inline;
+                margin: auto 15px auto 0;
+            }
+
+            &__flag{
+                display: inline;
+                margin: auto 0;
+                border-radius: 100%;
+                border: 1px solid $color-light-yellow;
+            }
+
+            &__btn{
+                color: $color-white;
+                box-shadow:none;
+
+                &:hover,
+                &:focus{
+                    color: $color-black;
+                    background: $color-grey;
+                }
+            }
+
+            
+            .dropup .dropdown-toggle::after{
+                color:$color-green-flag;
+                border-right: .5em solid transparent;
+                border-bottom: .5em solid;
+                border-left: .5em solid transparent;
+                margin-left: 10px;
+                vertical-align: 0;
+            }
+        }
+    }
+    &__inner{
+        padding:120px 0 100px 0;
+        background: url(../images/kebun-footer-bg.jpg) bottom center no-repeat;
+        filter: grayscale(100%);
+        background-size: cover;
+        color:white;
+
+        &--email{
+            margin-top: 6px;
+        }
+        &--address{
+            margin-top: 24px;
+        }
+    }
+    &__foot{
+        background: $color-soft-black;
+        padding: 16px 0;
+        color:white;
+        text-align: center;
+
+        &--img{
+            max-width: 200px;
+        }
+
+        .caption{
+            margin-top: 6px;
         }
     }
 }
