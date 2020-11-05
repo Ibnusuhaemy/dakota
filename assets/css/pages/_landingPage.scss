@@ -135,6 +135,8 @@
             margin:-70px auto 30px auto;
             z-index: 8;
             position: relative;
+            width: 550px;
+            height: auto;
         }
     }
 
@@ -155,17 +157,16 @@
 
 //statistict ------------------------------
 .statistict{
-
+    overflow:hidden;
     
     &__img-person {
-        height: 600px;
         width: auto;
         position: absolute;
         bottom: 0;
         left: -80px;
     }
     &__content{
-        padding:70px 0 0 0;
+        padding:70px 0 10px 0;
 
         &--text{
             text-align: right;
@@ -179,12 +180,15 @@
         &--img{
             &-display{
                 width:300px;
+                margin:0 auto;
             }
             &-display-2{
                 width:150px;
+                margin-right: auto;
             }
             &-display-3{
                 width:120px;
+                margin-right: auto;
                 margin-top: 15px;
             }
         }
@@ -247,6 +251,10 @@
     background: $color-light-green;
     padding: 70px 0 70px 0;
     position: relative;
+
+    .container{
+        max-width: 960px;
+    }
 
     &__title{
         z-index:10;
@@ -335,6 +343,10 @@
     background: $color-soft-white;
     padding: 70px 0 70px 0;
     position: relative;
+    
+    .container{
+        max-width: 960px;
+    }
 
     &__title{
         z-index:10;
@@ -368,6 +380,8 @@
     }
 
     &__slider{
+        background: $color-soft-white;
+
         &--box{
             padding:50px 0;
         }
@@ -430,9 +444,9 @@
 
     &__bg{
         position: absolute;
-        left: -100px;
-        top: -40px;
-        height: 550px;
+        left: -35%;
+        top: 0;
+        height: 500px;
     }
 
     .form{
@@ -476,6 +490,7 @@
             &__btn{
                 color: $color-white;
                 box-shadow:none;
+                padding: 8px 16px;
 
                 &:hover,
                 &:focus{
@@ -499,13 +514,24 @@
         padding:120px 0 100px 0;
         background: url(../images/kebun-footer-bg.jpg) bottom center no-repeat;
         filter: grayscale(100%);
-        background-size: cover;
         color:white;
+        background-size: cover;
+
+        .container{
+            padding: 0;
+            margin: 0;
+        }
+
+        &--1{
+            margin-left:auto;
+        }
 
         &--email{
             margin-top: 6px;
+            overflow-wrap: break-word;
         }
         &--address{
+            overflow-wrap: break-word;
             margin-top: 24px;
         }
     }
@@ -521,6 +547,554 @@
 
         .caption{
             margin-top: 6px;
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// NOTEBOOK (1200px) RESPONSIVE NESS --------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(lg) {
+
+    // statistict ----------------------------
+    .statistict{
+
+        .container{
+            max-width: 100%;
+        }
+
+    
+        &__img-person {
+            width: 400px;
+            left:-50px;
+        }
+        &__content{
+            padding:30px 0 10px 0;
+    
+            &--text{
+                margin-right: 20px;
+            }
+    
+            &--img{
+                &-display{
+                    margin: 0 auto 0 120px; 
+                }
+                &-display-3{
+                    width: 80px;
+                    margin-right: auto;
+                    margin-top: 28px;
+                }
+            }
+    
+            &--body-one{
+                right: 40px;
+            }
+            &--body-two{
+                right: 50px;
+            }
+    
+            &--farm{
+                padding:0;
+                .statistict__content--body-one{
+                    right: 40px;
+                }
+                .statistict__content--body-two{
+                    right: 40px;
+                }
+            }
+            &--pie{
+                padding:0;
+                .statistict__content--body-one{
+                    position: absolute;
+                    top: 0;
+                    right: 40px;
+                }
+                .statistict__content--body-two{
+                    position: absolute;
+                    top: 55px;
+                    right: 40px;
+                }
+            }
+    
+    
+        }
+    }
+    
+    //partner ---------------------------------------------
+    .partner{
+        padding: 50px 0 50px 0;
+        
+        .container{
+            max-width: 768px;
+        }
+
+        &__title{
+
+            h2{
+                &:before{
+                    width: 90px;
+                }
+            }
+        }
+
+        &__bg {
+            position: absolute;
+            right: 0;
+            bottom: -120px;
+            width: 350px;
+        }
+
+        &__slider{
+            &--box{
+                padding:50px 0;
+            }
+        }
+
+        .slick-slide img {
+            height: 65px;
+        }
+
+    }
+    
+    //they-used ---------------------------------------------
+    .they-used{
+
+        .container{
+            max-width: 768px;
+        }
+
+    }
+
+    //contact ---------------------------------------------
+    .contact{
+        padding: 50px 0 50px 0;
+        
+        .container{
+            max-width: 100%;
+        }
+
+        &__title{
+
+            h2{
+                
+                &:before{
+                    width: 90px;
+                }
+            }
+        }
+
+        &__box{
+            margin:100px;
+
+        }
+        
+        &__content{
+            position: relative;
+            z-index: 10;
+        }
+
+        &__bg{
+            position: absolute;
+            left: -35%;
+            top: 30px;
+            height: 400px;
+        }
+
+        .form{
+            &-control{
+                border-color:$color-green;
+                border-radius: 12px;
+                &::placeholder{
+                    color:$color-green;
+                }
+            }
+
+            &-btn{
+                padding: 24px 64px;
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// TABLET RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(md-2) {
+    .header{
+        margin:30px 0 30px 0;
+        
+        &__call-us{
+
+            &--text:before{
+                margin-right: 10px;
+                width:150px;
+            }
+        }
+
+        &__dropdown{
+            margin-left:30px;
+
+            .dropdown-toggle{
+                background: $color-soft-white;
+                border: 0;
+                border-radius: 8px;
+                box-shadow: 0 4px 4px rgba(0,0,0,.12), 0 8px 8px rgba(0,0,0,.12), 6px 6px 4px rgba(0,0,0,.12);
+                padding: 10px;
+                &::after{
+                    display:none;
+                }
+            }
+        }
+        .dropdown-menu.show{
+            left:-15px;
+        }
+    }    
+
+    //slider hero ----------------------------------------------
+    .slider{
+
+        &__content{
+            .caption{
+                margin:0 0 0 10px;
+            }
+
+            .hero__button{
+                margin:12px 0 24px 10px;
+
+                .btn--yellow{
+                    height: fit-content;
+                    padding: 16px 24px;
+                    margin: auto 10px auto 0; 
+                }
+            }
+        }
+    }
+
+    
+    // who used ----------------------------
+    .who-used{
+        padding: 50px 0 50px 0;
+
+        &__title{
+
+            h2{
+                &:before{
+                    width: 350px;
+                }
+            }
+        }
+
+        &__content{
+            padding: 0 5px;
+            margin: 0 auto;
+            width: 100%;
+
+            &--body{
+                background: $color-soft-white;
+                padding: 16px;
+                margin: 0 3px;
+                border: none;
+                border-radius: 100px;
+            }
+        }
+    }
+    // statistict ----------------------------
+    .statistict{
+
+    
+        &__img-person {
+            width: 400px;
+        }
+        &__content{
+            padding:30px 0 24px 0;
+    
+            &--text{
+                text-align: right;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+    
+            &--img{
+                &-display{
+                    width:150px;
+                    margin: 0 auto 0 120px; 
+                }
+                &-display-2{
+                    margin: 0 auto 0 124px; 
+                }
+                &-display-3{
+                    margin: 15px auto 0 150px; 
+                }
+            }
+    
+            &--body-one{
+                top:0;
+                right: 40px;
+            }
+            &--body-two{
+                top:45px;
+                right: 50px;
+            }
+    
+            &--farm{
+                flex:100%;
+                .statistict__content--body-one{
+                    right: 50px;
+                }
+                .statistict__content--body-two{
+                    right: 50px;
+                }
+            }
+            &--pie{
+                .statistict__content--body-one{
+                    right: 50px;
+                }
+                .statistict__content--body-two{
+                    right: 50px;
+                }
+            }
+    
+    
+        }
+    }
+
+    
+    //they-used ---------------------------------------------
+    .they-used{
+
+        &__title{
+
+            h2{
+                &:before{
+                    width: 350px;
+                }
+            }
+        }
+        
+        .container{
+            max-width: 640px;
+        }
+
+    }
+
+  //partner ---------------------------------------------
+  .partner{
+        .container{
+            max-width: 640px;
+        }
+    }
+    
+    //contact ---------------------------------------------
+    .contact{
+        padding: 50px 0 50px 0;
+        
+        .container{
+            max-width: 100%;
+        }
+
+        &__title{
+
+            h2{
+                
+                &:before{
+                    width: 90px;
+                }
+            }
+        }
+
+        &__box{
+            margin:100px auto;
+
+        }
+        
+        &__content{
+            position: relative;
+            margin-left:30px;
+            z-index: 10;
+        }
+
+        &__bg{
+            left: -220px;
+            top: 60px;
+            height: 400px;
+        }
+
+        .form{
+            &-control{
+                border-color:$color-green;
+                border-radius: 12px;
+                &::placeholder{
+                    color:$color-green;
+                }
+            }
+
+            &-btn{
+                padding: 24px 64px;
+            }
+        }
+    }
+        
+    /// Footer ----------------------------------------------------------
+
+    .footer{
+        &__inner{
+
+            &--1{
+                margin-left:auto;
+            }
+            
+            &--2{
+                margin-right:auto;
+            }
+        }
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// Mobile (768px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(md) {
+
+    
+
+    
+    //who-used ---------------------------------------------
+    .who-used{
+
+        &__title{
+
+            h2{
+                &:before{
+                    width: 150px;
+                }
+            }
+        }
+        
+        .container{
+            max-width: 100%;
+        }
+        &__content{
+            &--body{
+                flex: 100%;
+                margin: 8px auto;
+            }
+        }
+
+    }
+
+    // statistict ----------------------------
+    .statistict{
+
+        &__box-person {
+            display:none;
+        }
+        &__content{
+            padding:30px 0 24px 0;
+    
+            &--text{
+                text-align: right;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+    
+            &--img{
+                &-display{
+                    width:150px;
+                    margin: 0 auto 0 120px; 
+                }
+                &-display-2{
+                    margin: 0 auto 0 124px; 
+                }
+                &-display-3{
+                    margin: 15px auto 0 150px; 
+                }
+            }
+    
+            &--body-one{
+                top:0;
+                right: 40px;
+            }
+            &--body-two{
+                top:45px;
+                right: 50px;
+            }
+    
+            &--farm{
+                flex:100%;
+                .statistict__content--body-one{
+                    right: 50px;
+                }
+                .statistict__content--body-two{
+                    right: 50px;
+                }
+            }
+            &--pie{
+                .statistict__content--body-one{
+                    right: 50px;
+                }
+                .statistict__content--body-two{
+                    right: 50px;
+                }
+            }
+    
+    
+        }
+    }
+        
+    /// Footer ----------------------------------------------------------
+
+    .footer{
+        &__upper{
+            .sign-in{
+                &__btn{
+                    padding: 8px 16px;
+                    margin: auto 0 auto 8px;
+                }
+            }
+
+            .language{
+
+                &__text{
+                    margin: auto 6px auto 0;
+                }
+
+
+                &__btn{
+                    padding:0;
+                }
+
+                
+                .dropup .dropdown-toggle::after{
+                    margin-left: 6px;
+                }
+            }
+        }
+        &__inner{
+            padding:70px 0 70px 0;
+
+            .container{
+                padding: 0;
+            }
+
+            &--1{
+                margin-left:auto;
+            }
+            
+            &--2{
+                margin-right:auto;
+            }
+
+            &--email{
+                overflow-wrap: break-word;
+            }
+            &--address{
+                overflow-wrap: break-word;
+            }
         }
     }
 }
