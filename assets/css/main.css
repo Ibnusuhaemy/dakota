@@ -425,13 +425,20 @@ strong {
       .footer__upper .language__btn:hover, .footer__upper .language__btn:focus {
         color: #000000;
         background: #95a5a6; }
-    .footer__upper .language .dropup .dropdown-toggle::after {
-      color: #b6de1e;
-      border-right: .5em solid transparent;
-      border-bottom: .5em solid;
-      border-left: .5em solid transparent;
-      margin-left: 10px;
-      vertical-align: 0; }
+    .footer__upper .language .dropup {
+      display: inline-block;
+      vertical-align: middle; }
+      .footer__upper .language .dropup .dropdown-toggle::after {
+        display: none; }
+  .footer__upper .upper-link {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+    left: 5px; }
+    .footer__upper .upper-link img {
+      width: 18px;
+      height: 18px; }
 
 .footer__inner {
   padding: 120px 0 100px 0;

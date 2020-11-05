@@ -499,14 +499,26 @@
                 }
             }
 
-            
-            .dropup .dropdown-toggle::after{
-                color:$color-green-flag;
-                border-right: .5em solid transparent;
-                border-bottom: .5em solid;
-                border-left: .5em solid transparent;
-                margin-left: 10px;
-                vertical-align: 0;
+            .dropup {
+                display: inline-block;
+                vertical-align: middle;
+                
+                .dropdown-toggle::after{
+                    display: none;
+                }
+            }
+        }
+
+        .upper-link {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            left: 5px;
+
+            img {
+                width: 18px;
+                height: 18px;
             }
         }
     }
