@@ -1,0 +1,268 @@
+.header-general {
+
+  // Menu
+  &__top-content {
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+
+  &__logo {
+    img {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      display: inline-block;
+    }
+  }
+
+  &__list-menu {
+    .list-inline {
+      text-align: right;
+      a {
+        color: $color-soft-black;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+      }
+    }
+  }
+
+  &__user-menu {
+    .dropdown-toggle {
+      padding: 0;
+      box-shadow: none;
+
+      img {
+        width: 48px;
+        height: auto;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .dropdown-menu{
+      &.show{
+        right: 0 !important;
+        left: auto !important;
+      }
+    }
+  }
+
+  // Search Form
+  &__search-form {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  .input-group {
+    border-radius: 12px;
+    border: 1px solid $color-grey;
+    padding: 6px 12px;
+  }
+
+  &__search-btn {
+    input[type=submit]{
+      width: 32px;
+      height: 38px;
+      text-indent: -99999px;
+      cursor: pointer;
+      border: none;
+      background-image: url(../images/icon-search.png);
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: center center;
+      background-color: transparent;
+    }
+  }
+
+  &__search-input {
+    &.form-control {
+      border-radius: 0;
+      border: none;
+    }
+  }
+
+  // Tab Content : Kayu Manis etc
+  &__tab-container {
+    max-width: 960px;
+    width: 100%;
+    margin: 3.5em auto;
+  }
+
+  &__tab-content {
+    width: 100%;
+    margin-bottom: 1.5em;
+
+    .nav-tabs {
+      justify-content: space-between;
+      border-bottom: none;
+
+      .nav-link {
+        text-align: center;
+        border: none;
+
+        &:hover,
+        &:focus {
+          border: none;
+        }
+        
+        .nav-image {
+          width: 180px;
+          height: 180px;
+          border-radius: 100%;
+          border: 1px solid $color-black;
+          display: flex;
+          overflow: hidden;
+          align-items: center;
+          opacity: .25;
+          margin-bottom: 1em;
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+        }
+
+        .nav-text {
+          font-size: 1.4rem;
+          line-height: 1.1;
+          font-weight: 600;
+          color: $color-black;
+          opacity: .25;
+        }
+
+        &.active {
+          border: none;
+
+          .nav-image,
+          .nav-text {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// NOTEBOOK (1200px) RESPONSIVE NESS --------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(lg) {
+
+  // Search Field ----------------------------
+  .header-general{
+
+    &__search-form{
+      margin-right: auto;
+    }
+  }
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// Mobile (768px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(md) {
+
+  // Top Menu ----------------------------
+  .header-general{
+    &__logo{
+      display: flex;
+      align-items: center;
+    }
+    
+    &__list-menu {
+      .list-inline {
+        margin-bottom: 0;
+      }
+    }
+
+    &__user-menu {
+      .dropdown-menu{
+        &.show {
+          right: 0 !important;
+          left: auto !important;
+          transform: translate3d(0, 50px, 0px) !important;
+        }
+      }
+    }
+
+    // Tab Content ----------------------------
+    &__tab-content {
+      .nav-tabs {
+        .nav-link {
+          .nav-image {
+            width: 90px;
+            height: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-query(sm) {
+
+  // Tab Content ----------------------------
+  .header-general{
+    &__logo {
+      margin-bottom: 1.5em;
+    }
+    
+    &__list-menu {
+      .list-inline {
+        text-align: left;
+
+        .list-inline-item {
+          display: block;
+          margin-bottom: .5em;
+
+          a {
+            padding-left: 0;
+            padding-right: 0;
+
+            &.dropdown-item {
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    &__user-menu {
+      .dropdown-menu{
+        &.show {
+          right: auto !important;
+          left: 0 !important;
+          transform: translate3d(0, 50px, 0px) !important;
+        }
+      }
+    }
+
+    &__tab-content {
+      .nav-tabs {
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        .nav-link {
+          .nav-image {
+            width: 60px;
+            height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+}
