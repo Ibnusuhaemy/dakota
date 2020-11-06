@@ -36,7 +36,9 @@
         }
     }
     .dropdown-menu.show{
-        left:-15px;
+        top: 100% !important;
+        left: 0px !important;
+        transform: translate3d(-137px, 0px, 0px) !important;
     }
 }
 //slider hero ----------------------------------------------
@@ -51,6 +53,10 @@
     &__image{
         width: 100%;
         height: auto;
+
+        &--img{
+            max-width: 90%;
+        }
     }
 
     &__content{
@@ -155,6 +161,11 @@
     }
 }
 
+.bg-wave{
+    margin-top: -3px;
+}
+
+
 //statistict ------------------------------
 .statistict{
     overflow:hidden;
@@ -168,6 +179,51 @@
     &__content{
         padding:70px 0 10px 0;
 
+        &--garden{
+            padding: 0;
+            width: 100%;
+            &-img-box{
+                width: 60%;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            &-body-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        &--farm-pie{
+            padding: 0;
+            width: 100%;
+        }
+        &--farm{
+            &-img-box{
+                display:flex;
+                align-items: center;
+            }
+            &-body-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        &--pie{
+            &-img-box{
+                display:flex;
+                align-items: center;
+            }
+            &-body-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
         &--text{
             text-align: right;
             margin-bottom: 30px;
@@ -177,60 +233,26 @@
             padding: 0;
         }
 
+        &--body-text{
+            align-items: center;
+            margin-left: 6px;
+        }
+
         &--img{
             &-display{
                 width:300px;
-                margin:0 auto;
             }
             &-display-2{
                 width:150px;
-                margin-right: auto;
             }
             &-display-3{
-                width:120px;
-                margin-right: auto;
-                margin-top: 15px;
+                height:100px;
+                width:auto;    
+                margin-right: 6px;
             }
         }
-
-        &--body-one{
-            position: absolute;
-            top: 45px;
-            right: 85px;
-        }
-        &--body-two{
-            position: absolute;
-            top: 100px;
-            right: 95px;
-        }
-
-        &--farm{
-            .statistict__content--body-one{
-                position: absolute;
-                top: 0;
-                right: 85px;
-            }
-            .statistict__content--body-two{
-                position: absolute;
-                top: 55px;
-                right: 70px;
-            }
-        }
-        &--pie{
-            .statistict__content--body-one{
-                position: absolute;
-                top: 0;
-                right: 30px;
-            }
-            .statistict__content--body-two{
-                position: absolute;
-                top: 55px;
-                right: 18px;
-            }
-        }
-
-
     }
+
 }
 //learn ---------------------
 .learn{
@@ -284,6 +306,10 @@
         padding:50px 0;
 
         &__image{ 
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
             img{
                 width: 250px;
                 margin: auto;
@@ -302,8 +328,6 @@
         &__quote{
             height: 50px;
             position: absolute;
-            top: 0;
-            left:0;
         }
     }
     
@@ -397,6 +421,12 @@
             height: 100px;
             margin: 0 auto;
         }
+    }
+
+    
+    .slick-prev,
+    .slick-next{
+        display:none !important;
     }
 
 
@@ -566,6 +596,7 @@
 /////////////////////////////////////////////////////////////////////////////////////
 @include media-query(lg) {
 
+
     // statistict ----------------------------
     .statistict{
 
@@ -580,53 +611,6 @@
         }
         &__content{
             padding:30px 0 10px 0;
-    
-            &--text{
-                margin-right: 20px;
-            }
-    
-            &--img{
-                &-display{
-                    margin: 0 auto 0 120px; 
-                }
-                &-display-3{
-                    width: 80px;
-                    margin-right: auto;
-                    margin-top: 28px;
-                }
-            }
-    
-            &--body-one{
-                right: 40px;
-            }
-            &--body-two{
-                right: 50px;
-            }
-    
-            &--farm{
-                padding:0;
-                .statistict__content--body-one{
-                    right: 40px;
-                }
-                .statistict__content--body-two{
-                    right: 40px;
-                }
-            }
-            &--pie{
-                padding:0;
-                .statistict__content--body-one{
-                    position: absolute;
-                    top: 0;
-                    right: 40px;
-                }
-                .statistict__content--body-two{
-                    position: absolute;
-                    top: 55px;
-                    right: 40px;
-                }
-            }
-    
-    
         }
     }
     
@@ -727,6 +711,67 @@
 }
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
+// 1024px RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(lg-1) {
+
+    // statistict ----------------------------
+    .statistict{
+
+        .container{
+            max-width: 100%;
+        }
+
+    
+        &__img-person {
+            width: 400px;
+            left:-50px;
+        }
+        &__content{
+            padding:30px 0 10px 0;
+
+            &--farm-pie{
+                margin:24px 0 0 0;
+            }
+            
+            &--farm{
+                width:100%;
+
+                &-img-box{
+                    display:flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    width: 60%;
+
+                    img{
+                        margin-right: 5rem;
+                    }
+                }
+            }
+            &--pie{
+                width:100%;
+                margin-top:24px;
+
+                &-img-box{
+                    display:flex;
+                    justify-content: flex-end;
+                    width: 60%;
+                    align-items: center;
+
+                    img{
+                        margin-right: 6rem;
+                    }
+                }
+            }
+
+        }
+    }
+    
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
 // TABLET RESPONSIVE NESS ---------------------
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
@@ -755,9 +800,6 @@
                     display:none;
                 }
             }
-        }
-        .dropdown-menu.show{
-            left:-15px;
         }
     }    
 
@@ -818,54 +860,6 @@
         }
         &__content{
             padding:30px 0 24px 0;
-    
-            &--text{
-                text-align: right;
-                margin-left: 10px;
-                margin-bottom: 10px;
-            }
-    
-            &--img{
-                &-display{
-                    width:150px;
-                    margin: 0 auto 0 120px; 
-                }
-                &-display-2{
-                    margin: 0 auto 0 124px; 
-                }
-                &-display-3{
-                    margin: 15px auto 0 150px; 
-                }
-            }
-    
-            &--body-one{
-                top:0;
-                right: 40px;
-            }
-            &--body-two{
-                top:45px;
-                right: 50px;
-            }
-    
-            &--farm{
-                flex:100%;
-                .statistict__content--body-one{
-                    right: 50px;
-                }
-                .statistict__content--body-two{
-                    right: 50px;
-                }
-            }
-            &--pie{
-                .statistict__content--body-one{
-                    right: 50px;
-                }
-                .statistict__content--body-two{
-                    right: 50px;
-                }
-            }
-    
-    
         }
     }
 
@@ -884,6 +878,15 @@
         
         .container{
             max-width: 640px;
+        }
+
+        .slider{
+            
+            &__content{
+                .caption{
+                    margin:6px 0 0 10px;
+                }
+            }
         }
 
     }
@@ -947,15 +950,119 @@
         
     /// Footer ----------------------------------------------------------
 
+    .footer{
+        &__inner{
+
+            &--1{
+                margin-left:auto;
+            }
+            
+            &--2{
+                margin-right:auto;
+            }
+        }
+    }
 }
-
-
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
 // Mobile (768px) RESPONSIVE NESS ---------------------
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
 @include media-query(md) {
+    .header{
+        margin:30px 0 30px 0;
+    
+        &__call-us{
+
+            &--text:before{
+                margin-right: 10px;
+                width:150px;
+                display:none;
+            }
+        }
+
+        &__dropdown{
+            margin-left:30px;
+
+            .dropdown-toggle{
+                background: $color-soft-white;
+                border: 0;
+                border-radius: 8px;
+                box-shadow: 0 4px 4px rgba(0,0,0,.12), 0 8px 8px rgba(0,0,0,.12), 6px 6px 4px rgba(0,0,0,.12);
+                padding: 10px;
+                padding: 8px;
+                position: relative;
+                top: 5px;
+                &::after{
+                    display:none;
+                }
+
+                img{
+                    width: 20px;
+                    height: auto;
+                }
+            }
+        }
+        .dropdown-menu.show{
+            top:calc(100% - 8px)!important;
+            transform: translate3d(-157px,0,0)!important;
+        }
+    }    
+
+    //hero slider ------------------------------------
+    .js-hero-slider{
+        padding: 0;
+        //slider hero ----------------------------------------------
+        .slider{
+
+            &__image{
+                max-width: 100%;
+                flex: 100%;
+                text-align: center;
+
+                &--img{
+                    margin: 0 auto;
+                    max-width: 300px;
+                }
+            }
+    
+            &__content{
+                max-width: 100%;
+                flex: 100%;
+
+                h1{
+                    margin:0 0 0 10px;
+                }
+
+                .caption{
+                    margin:0 0 0 10px;
+                }
+    
+                .hero__button{
+                    margin:10px 0;
+    
+                    .btn--yellow{
+                        height: fit-content;
+                        padding: 16px 24px;
+                        margin: auto 10px auto auto; 
+                    }
+                    .btn--circle{
+                        margin-right: auto; 
+                    }
+                }
+            }
+        }
+        .slick-dots {
+            bottom: -30px;
+        }
+    }
+    .slick-dotted.slick-slider{
+        margin:50px 0;
+    }
+
+
+    
+
     
     //who-used ---------------------------------------------
     .who-used{
@@ -971,6 +1078,12 @@
         
         .container{
             max-width: 100%;
+        }
+        &__img{
+            img{
+                margin: -70px auto 0px auto;
+                width: 300px;
+            }
         }
         &__content{
             &--body{
@@ -990,53 +1103,125 @@
         &__content{
             padding:30px 0 24px 0;
     
-            &--text{
-                text-align: right;
-                margin-left: 10px;
-                margin-bottom: 10px;
-            }
-    
             &--img{
                 &-display{
                     width:150px;
-                    margin: 0 auto 0 120px; 
+                    margin-right:4rem; 
                 }
-                &-display-2{
-                    margin: 0 auto 0 124px; 
-                }
-                &-display-3{
-                    margin: 15px auto 0 150px; 
-                }
-            }
+            } 
+        }
+    }
     
-            &--body-one{
-                top:0;
-                right: 40px;
+    //they-used ---------------------------------------------
+    .they-used{
+
+        &__title{
+
+            h2{
+                &:before{
+                    width: 150px;
+                }
             }
-            &--body-two{
-                top:45px;
-                right: 50px;
+        }
+        
+        .container{
+            max-width: 100%;
+        }
+
+        .slider{
+            &__image{
+                img{
+                    width:150px;
+                }
             }
+        }
+        
+        .slick-prev,
+        .slick-next{
+            display:none !important;
+        }
+
+    }
+
     
-            &--farm{
-                flex:100%;
-                .statistict__content--body-one{
-                    right: 50px;
-                }
-                .statistict__content--body-two{
-                    right: 50px;
+    //partner ---------------------------------------------
+    .partner{
+        .container{
+            max-width: 640px;
+        }
+        &__bg{
+            bottom: -90px;
+            width: 250px;
+        }
+        &__slider{
+            &--img{
+                max-width: 100%;
+            }
+        }
+    }
+    
+    //contact ---------------------------------------------
+    .contact{
+        padding: 50px 0 50px 0;
+        
+        .container{
+            max-width: 100%;
+        }
+
+        &__title{
+
+            h2{
+                
+                &:before{
+                    width: 90px;
                 }
             }
-            &--pie{
-                .statistict__content--body-one{
-                    right: 50px;
-                }
-                .statistict__content--body-two{
-                    right: 50px;
+        }
+
+        &__box{
+            margin:50px auto;
+
+            .row{
+                flex-direction: column-reverse;
+                margin: 0;
+            }
+
+        }
+        
+        &__content{
+            flex: 100%;
+            max-width: 100%;
+            margin-left: 8px;
+        }
+
+        &__images{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        &__bg{
+            position: relative;
+            height: 300px;
+            top:0;
+            left: 0;
+            max-width: 90%;
+            height: auto;
+        }
+
+        .form{
+            &-control{
+                border-color:$color-green;
+                border-radius: 12px;
+                &::placeholder{
+                    color:$color-green;
                 }
             }
-    
-    
+
+            &-btn{
+                padding: 24px 64px;
+            }
         }
     }
         
@@ -1052,6 +1237,9 @@
             }
 
             .language{
+
+                margin: auto 16px auto auto;
+                
 
                 &__text{
                     margin: auto 6px auto 0;
@@ -1073,6 +1261,10 @@
 
             .container{
                 padding: 0;
+
+                .row{
+                    margin: 0;
+                }
             }
 
             &--1{
@@ -1110,6 +1302,91 @@
                 padding-left: 30px;
                 padding-right: 30px;
             }
+        }
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// Mobile (768px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(xs) {
+    .header{
+        &__call-us{
+            margin: 20px 0 auto auto;
+            flex: 60%;
+        }
+    }
+    .who-used{
+
+        &__title{
+            h2{
+                margin-left: 16px;
+            }
+        }
+        &__img{
+                img {
+                margin: -10px auto 0 auto;
+                width: 300px;
+            }
+        } 
+    }
+
+    .statistict{
+        &__content {
+            padding: 30px 9px 24px 8px;
+
+            &--img{
+                &-display{
+                    width:120px;
+                    margin-right:0; 
+                }
+            } 
+            &--farm-img-box{ 
+                img {
+                    margin-right: 0;
+                }
+            }
+            &--pie-img-box{ 
+                img {
+                    margin-right: 10px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+
+    .they-used{
+
+
+
+        &__title{
+            h2{
+                margin-left: 16px;
+            }
+        }
+
+        .slider{
+            &__row{
+                flex-direction: column;
+            }
+            &__content{
+                &--text {
+                margin-top: 40px;
+                }
+            }
+            &__quote{
+                height: 30px;
+            }
+        }
+    }
+
+    .partner{
+        &__bg {
+            bottom: -30px;
+            width: 150px;
         }
     }
 }
