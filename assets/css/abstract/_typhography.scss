@@ -40,6 +40,17 @@
 }
 
 @font-face {
+  font-family: 'Helvetica-Regular';
+  src: url('../fonts/helveticanowdisplayregular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/helveticanowdisplayregular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/helveticanowdisplayregular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/helveticanowdisplayregular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/helveticanowdisplayregular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/helveticanowdisplayregular.svg#helveticanowdisplayregular') format('svg'); /* Legacy iOS */
+  font-weight: bold;
+}
+
+@font-face {
   font-family: 'Helvetica-Bold';
   src: url('../fonts/helveticanowdisplaybold.eot'); /* IE9 Compat Modes */
   src: url('../fonts/helveticanowdisplaybold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */

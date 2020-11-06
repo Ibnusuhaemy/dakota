@@ -40,6 +40,7 @@ gulp.task('pack-css', function () {
 gulp.task('pack-js', function () {
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.min.js',
+        'node_modules/canvas/canvasjs.min.js',
     ])
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('assets/js'));
