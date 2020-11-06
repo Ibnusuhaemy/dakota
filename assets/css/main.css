@@ -216,9 +216,10 @@ strong {
   overflow: hidden; }
   .statistict__img-person {
     width: auto;
+    max-height: 100%;
     position: absolute;
     bottom: 0;
-    left: -80px; }
+    left: 0; }
   .statistict__content {
     padding: 70px 0 10px 0; }
     .statistict__content--garden {
@@ -272,11 +273,18 @@ strong {
 .learn {
   padding: 70px 0;
   background: #f6f6f6;
-  color: #1a8466; }
+  color: #1a8466;
+  position: relative; }
   .learn-1, .learn-2, .learn-3 {
     padding-bottom: 70px; }
   .learn-btn {
     padding: 16px 24px; }
+  .learn__bg {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    width: 300px;
+    bottom: -150px; }
 
 .they-used {
   background: #57c479;
@@ -462,7 +470,7 @@ strong {
 
 .footer__inner {
   padding: 120px 0 100px 0;
-  background: url(../images/kebun-footer-bg.jpg) bottom center no-repeat;
+  background: url(../images/bg-footer.png) center no-repeat;
   filter: grayscale(100%);
   color: white;
   background-size: cover; }
@@ -486,19 +494,20 @@ strong {
     margin-top: 6px; }
 
 @media only screen and (max-width: 1199.98px) {
+  .who-used__title h2 {
+    margin-left: 16px; }
   .statistict .container {
     max-width: 100%; }
-  .statistict__img-person {
-    width: 400px;
-    left: -50px; }
   .statistict__content {
     padding: 30px 0 10px 0; }
   .partner {
     padding: 50px 0 50px 0; }
     .partner .container {
       max-width: 768px; }
-    .partner__title h2:before {
-      width: 90px; }
+    .partner__title h2 {
+      margin-left: 16px; }
+      .partner__title h2:before {
+        width: 90px; }
     .partner__bg {
       position: absolute;
       right: 0;
@@ -508,14 +517,21 @@ strong {
       padding: 50px 0; }
     .partner .slick-slide img {
       height: 65px; }
+  .learn__bg {
+    width: 200px;
+    bottom: -120px; }
+  .they-used__title h2 {
+    margin-left: 16px; }
   .they-used .container {
     max-width: 768px; }
   .contact {
     padding: 50px 0 50px 0; }
     .contact .container {
       max-width: 100%; }
-    .contact__title h2:before {
-      width: 90px; }
+    .contact__title h2 {
+      margin-left: 16px; }
+      .contact__title h2:before {
+        width: 90px; }
     .contact__box {
       margin: 100px; }
     .contact__content {
@@ -537,9 +553,6 @@ strong {
 @media only screen and (max-width: 1023.98px) {
   .statistict .container {
     max-width: 100%; }
-  .statistict__img-person {
-    width: 400px;
-    left: -50px; }
   .statistict__content {
     padding: 30px 0 10px 0; }
     .statistict__content--farm-pie {
@@ -603,7 +616,7 @@ strong {
         border: none;
         border-radius: 100px; }
   .statistict__img-person {
-    width: 400px; }
+    width: 300px; }
   .statistict__content {
     padding: 30px 0 24px 0; }
   .they-used__title h2:before {
@@ -713,6 +726,9 @@ strong {
     .statistict__content--img-display {
       width: 150px;
       margin-right: 4rem; }
+  .learn__bg {
+    width: 120px;
+    bottom: -60px; }
   .they-used__title h2:before {
     width: 150px; }
   .they-used .container {
@@ -805,8 +821,6 @@ strong {
   .header__call-us {
     margin: 20px 0 auto auto;
     flex: 60%; }
-  .who-used__title h2 {
-    margin-left: 16px; }
   .who-used__img img {
     margin: -10px auto 0 auto;
     width: 300px; }
@@ -820,8 +834,9 @@ strong {
     .statistict__content--pie-img-box img {
       margin-right: 10px;
       height: 70px; }
-  .they-used__title h2 {
-    margin-left: 16px; }
+  .learn__bg {
+    width: 100px;
+    bottom: -70px; }
   .they-used .slider__row {
     flex-direction: column; }
   .they-used .slider__content--text {

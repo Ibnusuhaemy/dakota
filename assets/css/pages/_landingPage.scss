@@ -172,9 +172,10 @@
     
     &__img-person {
         width: auto;
+        max-height: 100%;
         position: absolute;
         bottom: 0;
-        left: -80px;
+        left: 0;
     }
     &__content{
         padding:70px 0 10px 0;
@@ -259,6 +260,7 @@
     padding:70px 0;
     background:$color-soft-white;
     color:$color-green;
+    position: relative;
 
     &-1,&-2,&-3{
         padding-bottom: 70px;
@@ -266,6 +268,13 @@
 
     &-btn{
         padding:16px 24px;
+    }
+    &__bg{
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        width: 300px;
+        bottom: -150px;
     }
 }
 //they-used ---------------------------------------------
@@ -554,7 +563,7 @@
     }
     &__inner{
         padding:120px 0 100px 0;
-        background: url(../images/kebun-footer-bg.jpg) bottom center no-repeat;
+        background: url(../images/bg-footer.png) center no-repeat;
         filter: grayscale(100%);
         color:white;
         background-size: cover;
@@ -596,6 +605,14 @@
 /////////////////////////////////////////////////////////////////////////////////////
 @include media-query(lg) {
 
+    .who-used{
+        &__title{
+            h2{
+                margin-left: 16px;
+            }
+        }
+    }
+
 
     // statistict ----------------------------
     .statistict{
@@ -604,11 +621,6 @@
             max-width: 100%;
         }
 
-    
-        &__img-person {
-            width: 400px;
-            left:-50px;
-        }
         &__content{
             padding:30px 0 10px 0;
         }
@@ -617,6 +629,7 @@
     //partner ---------------------------------------------
     .partner{
         padding: 50px 0 50px 0;
+
         
         .container{
             max-width: 768px;
@@ -625,6 +638,8 @@
         &__title{
 
             h2{
+                margin-left: 16px;
+            
                 &:before{
                     width: 90px;
                 }
@@ -649,10 +664,21 @@
         }
 
     }
+
+    .learn{
+        &__bg{
+            width: 200px;
+            bottom: -120px;
+        }
+    }
     
     //they-used ---------------------------------------------
     .they-used{
-
+        &__title{
+            h2{
+                margin-left: 16px;
+            }
+        }
         .container{
             max-width: 768px;
         }
@@ -670,7 +696,8 @@
         &__title{
 
             h2{
-                
+                margin-left: 16px;
+            
                 &:before{
                     width: 90px;
                 }
@@ -723,11 +750,6 @@
             max-width: 100%;
         }
 
-    
-        &__img-person {
-            width: 400px;
-            left:-50px;
-        }
         &__content{
             padding:30px 0 10px 0;
 
@@ -856,7 +878,7 @@
 
     
         &__img-person {
-            width: 400px;
+            width: 300px;
         }
         &__content{
             padding:30px 0 24px 0;
@@ -1111,6 +1133,13 @@
             } 
         }
     }
+
+    .learn{
+        &__bg {
+            width: 120px;
+            bottom: -60px;
+        }
+    }
     
     //they-used ---------------------------------------------
     .they-used{
@@ -1309,7 +1338,7 @@
 
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
-// Mobile (768px) RESPONSIVE NESS ---------------------
+// Mobile (480px) RESPONSIVE NESS ---------------------
 /////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////
 @include media-query(xs) {
@@ -1321,11 +1350,6 @@
     }
     .who-used{
 
-        &__title{
-            h2{
-                margin-left: 16px;
-            }
-        }
         &__img{
                 img {
                 margin: -10px auto 0 auto;
@@ -1358,15 +1382,15 @@
         }
     }
 
-    .they-used{
-
-
-
-        &__title{
-            h2{
-                margin-left: 16px;
-            }
+    
+    .learn{
+        &__bg {
+            width: 100px;
+            bottom: -70px;
         }
+    }
+
+    .they-used{
 
         .slider{
             &__row{
