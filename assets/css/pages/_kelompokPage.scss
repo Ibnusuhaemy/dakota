@@ -1,0 +1,36 @@
+.header-general {
+  &--image-bg {
+    background-image: url(../images/kelompok-tani-hero.png);
+    background-size: cover;
+    background-position: top center;
+  }
+  &__page-title {
+    padding-top: 4em;
+    padding-bottom: 8em;
+    &--yellow {
+      color: $color-light-yellow;
+    }
+  }
+}
+
+// Kelompok Tani Hero Section
+.kelompok-caption {
+  margin-bottom: 5em;
+
+  &__text {
+    font-family: 'Helvetica-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    width: 100%;
+    max-width: 775px;
+  }
+}
+
+// Petani List Section
+.petani-data {
+  padding-bottom: 12em;
+
+  &__list {
+    padding-top: 5em;
+  }
+}
