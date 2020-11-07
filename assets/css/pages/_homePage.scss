@@ -1,8 +1,11 @@
 // Header
 .header-general {
-  background-image: url(../images/home-hero-bg.png);
-  background-size: cover;
-  background-position: top center;
+
+  &--green-gradient{
+    background-image: url(../images/home-hero-bg.png);
+    background-size: cover;
+    background-position: top center;
+  }
 
   // Menu
   &__top-content {
