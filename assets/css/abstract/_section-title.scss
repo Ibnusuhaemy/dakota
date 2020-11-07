@@ -17,6 +17,10 @@
     bottom: 0;
     border-top: 1px solid #000000;
     margin: 0;
+
+    &--shorter {
+      width: 640px;
+    }
   }
 
   &__description {
