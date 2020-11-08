@@ -3,7 +3,7 @@
     margin:50px 0 30px 0;
 
     &__call-us{
-        margin:auto 0 auto auto;
+        margin: auto 0 auto auto;
 
         &--text{           
             display: flex;
@@ -17,8 +17,21 @@
             border-bottom: 1px solid #000;
             margin: auto;
             margin-right: 20px;
-            width:300px;
+            width: 260px;
         }
+    }
+
+    &__email-container {
+        position: relative;
+        min-height: 1px;
+    }
+
+    &__email-us {
+        display: inline-block;
+        transform: rotate(-90deg);
+        position: absolute;
+        right: -206px;
+        top: 220px;
     }
 
     &__dropdown{
@@ -607,6 +620,19 @@
 /////////////////////////////////////////////////////////////////////////////////////
 @include media-query(lg) {
 
+    .slider {
+        &__content {
+            h1 {
+                padding-right: 2em;
+            }
+
+            .hero {
+                &__button {
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
     .who-used{
         &__title{
             h2{
@@ -798,6 +824,11 @@
             }
         }
 
+        &__email-us {
+            right: -150px;
+            top: 160px;
+        }
+
         &__dropdown{
             margin-left:30px;
 
@@ -986,6 +1017,12 @@
             }
         }
 
+        &__email-us {
+            transform: none;
+            right: 15px;
+            top: 0;
+        }
+
         &__dropdown{
             margin-left:30px;
 
@@ -1039,6 +1076,7 @@
                 h1{
                     margin:0 0 0 10px;
                     white-space: normal;
+                    padding-right: 0;
                 }
 
                 .caption{
@@ -1332,6 +1370,11 @@
         &__call-us{
             margin: 20px 0 auto auto;
             flex: 60%;
+        }
+        &__email-us {
+            left: 15px;
+            right: auto;
+            margin-top: 0;
         }
     }
     .js-hero-slider {

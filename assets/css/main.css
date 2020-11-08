@@ -163,7 +163,16 @@ strong {
       border-bottom: 1px solid #000;
       margin: auto;
       margin-right: 20px;
-      width: 300px; }
+      width: 260px; }
+  .header__email-container {
+    position: relative;
+    min-height: 1px; }
+  .header__email-us {
+    display: inline-block;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: -206px;
+    top: 220px; }
   .header__dropdown {
     margin-left: 30px; }
     .header__dropdown .dropdown-toggle {
@@ -540,6 +549,10 @@ strong {
     margin-top: 6px; }
 
 @media only screen and (max-width: 1199.98px) {
+  .slider__content h1 {
+    padding-right: 2em; }
+  .slider__content .hero__button {
+    padding-bottom: 1em; }
   .who-used__title h2 {
     margin-left: 16px; }
   .statistict .container {
@@ -626,6 +639,9 @@ strong {
     .header__call-us--text:before {
       margin-right: 10px;
       width: 150px; }
+    .header__email-us {
+      right: -150px;
+      top: 160px; }
     .header__dropdown {
       margin-left: 30px; }
       .header__dropdown .dropdown-toggle {
@@ -706,6 +722,10 @@ strong {
       margin-right: 10px;
       width: 150px;
       display: none; }
+    .header__email-us {
+      transform: none;
+      right: 15px;
+      top: 0; }
     .header__dropdown {
       margin-left: 30px; }
       .header__dropdown .dropdown-toggle {
@@ -739,7 +759,8 @@ strong {
       flex: 100%; }
       .js-hero-slider .slider__content h1 {
         margin: 0 0 0 10px;
-        white-space: normal; }
+        white-space: normal;
+        padding-right: 0; }
       .js-hero-slider .slider__content .caption {
         margin: 0 0 0 10px; }
       .js-hero-slider .slider__content .hero__button {
@@ -874,6 +895,10 @@ strong {
   .header__call-us {
     margin: 20px 0 auto auto;
     flex: 60%; }
+  .header__email-us {
+    left: 15px;
+    right: auto;
+    margin-top: 0; }
   .js-hero-slider .slider__content h1 {
     word-break: break-word; }
   .js-hero-slider .slider__content .hero__button {
