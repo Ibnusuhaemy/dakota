@@ -295,7 +295,7 @@
     padding: 70px 0 70px 0;
     position: relative;
 
-    .container{
+    &__slider-container{
         max-width: 960px;
     }
 
@@ -700,7 +700,8 @@
                 position: relative;
             }
         }
-        .container{
+
+        &__slider-container{
             max-width: 768px;
         }
 
@@ -909,8 +910,7 @@
     
     //they-used ---------------------------------------------
     .they-used{
-        
-        .container{
+        &__slider-container{
             max-width: 640px;
         }
 
@@ -1172,8 +1172,7 @@
     
     //they-used ---------------------------------------------
     .they-used{
-        
-        .container{
+        &__slider-container{
             max-width: 100%;
         }
 
