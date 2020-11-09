@@ -30,6 +30,8 @@ gulp.task('pack-css', function () {
     return gulp.src([
         // example
         'node_modules/bootstrap/dist/css/bootstrap.min.css',
+        'node_modules/slick-carousel/slick/slick.css',
+        'node_modules/slick-carousel/slick/slick-theme.css',
     ])
     .pipe(concat('vendor.css'))
     .pipe(gulp.dest('assets/css'));
@@ -37,8 +39,8 @@ gulp.task('pack-css', function () {
 
 gulp.task('pack-js', function () {
     return gulp.src([
-        'node_modules/jquery/dist/jquery.min.js',
-        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/slick-carousel/slick/slick.min.js',
+        'node_modules/canvas/canvasjs.min.js',
     ])
     .pipe(concat('vendor.js'))
     .pipe(gulp.dest('assets/js'));

@@ -1,0 +1,456 @@
+// Header
+.header-general {
+
+  &--green-gradient{
+    background-image: url(../images/home-hero-bg.png);
+    background-size: cover;
+    background-position: top center;
+  }
+
+  // Menu
+  &__top-content {
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+
+  &__logo {
+    img {
+      max-width: 180px;
+      width: 100%;
+      height: auto;
+      display: inline-block;
+    }
+  }
+
+  &__list-menu {
+    .list-inline {
+      text-align: right;
+      a {
+        color: $color-soft-black;
+        font-weight: 500;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+      }
+    }
+  }
+
+  &__user-menu {
+    .dropdown-toggle {
+      padding: 0;
+      box-shadow: none;
+
+      img {
+        width: 48px;
+        height: auto;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .dropdown-menu{
+      &.show{
+        right: 0 !important;
+        left: auto !important;
+      }
+    }
+  }
+
+  // Search Form
+  &__search-form {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  
+  .input-group {
+    border-radius: 12px;
+    border: 1px solid $color-grey;
+    padding: 6px 12px;
+  }
+
+  &__search-btn {
+    input[type=submit]{
+      width: 32px;
+      height: 38px;
+      text-indent: -99999px;
+      cursor: pointer;
+      border: none;
+      background-image: url(../images/icon-search.png);
+      background-repeat: no-repeat;
+      background-size: 20px 20px;
+      background-position: center center;
+      background-color: transparent;
+    }
+  }
+
+  &__search-input {
+    &.form-control {
+      border-radius: 0;
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  // Tab Content : Kayu Manis etc
+  &__tab-container {
+    max-width: 960px;
+    width: 100%;
+    margin: 3.5em auto;
+  }
+
+  &__tab-content {
+    width: 100%;
+    margin-bottom: 1.5em;
+
+    .nav-tabs {
+      justify-content: space-between;
+      border-bottom: none;
+
+      .nav-link {
+        text-align: center;
+        border: none;
+
+        &:hover,
+        &:focus {
+          border: none;
+        }
+        
+        .nav-image {
+          width: 180px;
+          height: 180px;
+          border-radius: 100%;
+          border: 1px solid $color-black;
+          display: flex;
+          overflow: hidden;
+          align-items: center;
+          opacity: .25;
+          margin-bottom: 1em;
+
+          img {
+            width: 100%;
+            height: auto;
+            display: block;
+          }
+        }
+
+        .nav-text {
+          font-size: 1.4rem;
+          line-height: 1.1;
+          font-weight: 600;
+          color: $color-black;
+          opacity: .25;
+        }
+
+        &.active {
+          border: none;
+          background-color: transparent;
+
+          .nav-image,
+          .nav-text {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Map Content
+.home-map {
+  padding-top: 2.5em;
+  padding-bottom: 4em;
+  background-color: rgba($color-grey, .125);
+  
+  &__filter-title {
+    text-transform: capitalize;
+    margin-bottom: 1em;
+    box-shadow: none;
+  }
+
+  &__filter-item {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  &__filter-selector {
+    font-family: 'Qanelas-Light', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 1rem;
+    padding: 4px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0,.12), 0 4px 4px rgba(0,0,0,.12), 3px 3px 3px rgba(0,0,0,.12);
+  }
+}
+
+.home-graph {
+  padding-top: 3.5em;
+  padding-bottom: 3.5em;
+
+  &__content {
+    padding-top: 2em;
+    padding-bottom: 1em;
+
+    &--doughnut {
+      padding-bottom: 2em;
+    }
+  }
+
+  &__heading {
+    font-family: 'Qanelas-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: .25em;
+  }
+
+  &__description {
+    font-family: 'Helvetica-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: .85rem;
+    line-height: 1.3;
+    margin-bottom: .75em;
+
+    &--proyeksi {
+      padding-right: 2em;
+    }
+  }
+
+  &__line {
+    border-top: 1px solid rgba($color-black, .25);
+  }
+
+  &__proyeksi {
+    background-image: url(../images/proyeksi-bg.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 14em;
+  }
+}
+
+.home-image-box {
+  margin-bottom: 3em;
+
+  &__photo {
+    border: 1px solid $color-other-grey;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__data {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  &__data-inner {
+    padding: 20px;
+    border-radius: 30px;
+    background-color: $color-white;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    position: relative;
+    top: -55px;
+
+    h4 {
+      color: $color-soft-black; 
+      margin-bottom: .25em;
+    }
+
+    p {
+      font-family: 'Helvetica-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      font-size: 1rem;
+      line-height: 1.2;
+      color: $color-soft-black;
+      margin-bottom: .25em;
+    }
+
+    .btn {
+      font-size: .65rem;
+      line-height: 1.1;
+      color: $color-soft-black;
+      background-color: $color-yellow;
+      border-radius: 10px;
+      padding: 4px 16px;
+      box-shadow: none;
+      display: block;
+      margin: 1.2em 0 0 auto;
+      max-width: 150px;
+      width: 100%;
+
+      img {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        top: 2px;
+        left: 5px;
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// NOTEBOOK (1200px) RESPONSIVE NESS --------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(lg) {
+
+  // Map ----------------------------
+  .home-map {
+    &__filter-title {
+      margin-top: 1em;
+    }
+    &__filter-selector {
+      margin-bottom: 1em;
+    }
+  }
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// TABLET (992px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(md-2) {
+
+  // Search Field ----------------------------
+  .header-general{
+    &__search-form{
+      margin-right: auto;
+    }
+  }
+
+  .home-graph {
+    &__tree{
+      margin-bottom: 1em;
+    }
+
+    &__area{
+      margin-bottom: 1em;
+    }
+
+    &__description {
+      margin-top: 1em;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// Mobile (768px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(md) {
+
+  // Top Menu ----------------------------
+  .header-general{
+    &__logo{
+      display: flex;
+      align-items: center;
+    }
+    
+    &__list-menu {
+      .list-inline {
+        margin-bottom: 0;
+      }
+    }
+
+    &__user-menu {
+      .dropdown-menu{
+        &.show {
+          right: 0 !important;
+          left: auto !important;
+          transform: translate3d(0, 50px, 0px) !important;
+        }
+      }
+    }
+
+    // Tab Content ----------------------------
+    &__tab-content {
+      .nav-tabs {
+        .nav-link {
+          .nav-image {
+            width: 90px;
+            height: 90px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-query(sm) {
+
+  .header-general{
+    // Menu ----------------------------
+    &__logo {
+      margin-bottom: 1.5em;
+    }
+    
+    &__list-menu {
+      .list-inline {
+        text-align: left;
+
+        .list-inline-item {
+          display: block;
+          margin-bottom: .5em;
+
+          a {
+            padding-left: 0;
+            padding-right: 0;
+
+            &.dropdown-item {
+              padding-left: 10px;
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    &__user-menu {
+      .dropdown-menu{
+        &.show {
+          right: auto !important;
+          left: 0 !important;
+          transform: translate3d(0, 50px, 0px) !important;
+        }
+      }
+    }
+
+    // Tab Content ----------------------------
+    &__tab-content {
+      .nav-tabs {
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        .nav-link {
+          .nav-image {
+            width: 60px;
+            height: 60px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-query(xs) {
+  // Map ----------------------------
+  .home-map {
+    &__filter-item {
+      width: 48%;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,292 @@
+.petani-detail {
+  &__featured-image {
+    width: 100%;
+    height: auto;
+  }
+
+  &__name {
+    font-family: 'Qanelas-Extra-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: $color-soft-black;
+    margin-bottom: 1.5em;
+  }
+
+  &__data {
+    margin-bottom: 1.5em;
+
+    p {
+      font-size: 1rem;
+      margin-bottom: .5em;
+    }
+  }
+
+  &__description {
+    margin-bottom: 2em;
+
+    p {
+      font-family: 'Helvetica-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      font-size: .85rem;
+      line-height: 1.25;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+// Detail Perkebunan
+.petani-kebun {
+  padding-top: 4em;
+  padding-bottom: 5em;
+  background-image: url(../images/home-hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  &__featured-image {
+    width: 100%;
+    max-width: 285px;
+    height: auto;
+    display: block;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  &__tab-list {
+    padding-right: 0;
+  }
+
+  &__tab-menu {
+    margin-top: 2em;
+
+    .nav-link {
+      font-family: 'Helvetica-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      border-radius: 0;
+      text-transform: uppercase;
+      color: $color-soft-black;
+      
+      &.active {
+        color: $color-soft-black;
+        background-color: transparent;
+        background-image: url(../images/tab-bg.png);
+        background-size: cover;
+        background-position: right center;
+      }
+    }
+  }
+
+  &__tab-content {
+    padding-left: 0;
+
+    .tab-content {
+      padding: 25px;
+      border-radius: 12px;
+      background-color: $color-white;
+    }
+  }
+
+  &__accordion {
+    .card {
+      border: none;
+      border-radius: 0;
+      
+      .card-header {
+        border-bottom: none;
+        margin-bottom: .75em;
+        padding: 0;
+        
+        .btn {
+          font-family: 'Helvetica-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+          font-size: 1rem;
+          text-transform: none;
+          color: $color-soft-black;
+          border-radius: 25px;
+          box-shadow: none;
+          padding: 1em 1.4em;
+          background-color: $color-soft-grey;
+          display: flex;
+          
+          &[aria-expanded="true"] {
+            background-color: $color-light-yellow;
+
+            .petani-kebun__arrow-nav {
+              transform: rotate(180deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__arrow-nav {
+    margin-right: 0;
+    margin-left: auto;
+    transition: all .5s ease-in-out;
+  }
+
+  &__content-list {
+    li {
+      p {
+        font-size: .85rem;
+        white-space: normal;
+        margin-bottom: .8em;
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__photo {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.petani-map {
+  padding-top: 6em;
+  padding-bottom: 6em;
+
+  &__embed-map {
+    z-index: 3;
+  }
+
+  &__call {
+    margin-bottom: 3em;
+  }
+
+  &__call-title {
+    margin-bottom: 1em;
+
+    .section-title__line {
+      z-index: 1;
+    }
+  }
+
+  &__call-item {
+    p {
+      font-family: 'Helvetica-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      font-size: 1rem;
+      line-height: 1.2;
+      padding-left: 0;
+      padding-right: 0;
+      margin-bottom: .45em;
+      white-space: normal;
+      word-break: break-all;
+    }
+  }
+
+  &__form {
+    .form-control {
+      border-color: $color-soft-black;
+    }
+  }
+
+  &__form-btn {
+    border-radius: 6px;
+    border: 1px solid $color-soft-black;
+    box-shadow: none;
+    margin-top: 1em;
+  }
+}
+
+.petani-cta {
+  padding-top: 3em;
+  padding-bottom: 3.5em;
+  background-color: $color-dark-green;
+
+  &__title {
+    font-family: 'Qanelas-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    color: $color-white;
+    margin-bottom: 1em;
+  }
+  
+  &__btn {
+    font-family: 'Qanelas-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    background-color: $color-light-green;
+    padding: 16px 48px;
+    box-shadow: 0 1px 1px rgba(255,255,255,.12), 0 2px 2px rgba(255,255,255,.12), 0 4px 4px rgba(255,255,255,.12), 0 8px 8px rgba(255,255,255,.12), 0 16px 16px rgba(255,255,255,.12);
+    
+    &:hover {
+      background-color: darken($color-light-green, 5%);
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// DESKTOP (1200px) RESPONSIVE NESS --------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+
+@include media-query(lg) {
+  
+  // Hubungi Melalui Dakota ----------------------------
+  .petani-map {
+    &__call {
+      margin-top: 3em;
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// TABLET (992px) RESPONSIVE NESS --------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+
+@include media-query(md-2) {
+  
+  // Detail Perkebunan ----------------------------
+  .petani-kebun{
+    &__tab-menu {
+      .nav-link {
+        img {
+          display: block;
+        }
+      }
+    }
+
+    &__content-list {
+      padding-left: 10px;
+
+      li {
+        p {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// MOBILE (768px) RESPONSIVE NESS --------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+
+@include media-query(sm) {
+
+  // Detail Perkebunan ----------------------------
+  .petani-kebun{
+    &__tabs {
+      margin-bottom: 2em;
+    }
+  }
+
+  // Hubungi Melalui Dakota ----------------------------
+  .petani-map {
+    &__form {
+      .form-group {
+        margin-bottom: 0;
+        .form-control {
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+
+}

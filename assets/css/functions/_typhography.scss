@@ -1,0 +1,26 @@
+
+// FONT SIZE IN RESPONSIVENESS
+// TABLET RESPONSIVE NESS ---------------------
+@include media-query(lg) {
+    h1 {
+          font-size: 3.5rem;
+    }
+}
+
+@include media-query(md-2) {
+    h1 {
+          font-size: 3.25rem;
+    }
+    
+    h2 {
+      font-size: 2.25rem;
+    }
+    
+    .caption {
+      font-size: 13px;
+    }
+    
+    p {
+      font-size: 1.2rem;
+    }
+}

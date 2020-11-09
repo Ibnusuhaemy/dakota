@@ -1,0 +1,111 @@
+// Rules for fonts and heading
+@font-face {
+  font-family: 'Qanelas-Extra-Bold';
+  src: url('../fonts/qanelassoftextrabold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/qanelassoftextrabold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/qanelassoftextrabold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/qanelassoftextrabold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/qanelassoftextrabold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/qanelassoftextrabold.svg#qanelassoftextrabold') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Qanelas-Bold';
+  src: url('../fonts/qanelassoftbold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/qanelassoftbold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/qanelassoftbold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/qanelassoftbold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/qanelassoftbold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/qanelassoftbold.svg#qanelassoftbold') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Qanelas-Light';
+  src: url('../fonts/QanelasSoft-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/QanelasSoft-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/QanelasSoft-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/QanelasSoft-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/QanelasSoft-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/QanelasSoft-Light.svg#QanelasSoft-Light') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Helvetica-Light';
+  src: url('../fonts/helveticanowdisplaylight.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/helveticanowdisplaylight.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/helveticanowdisplaylight.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/helveticanowdisplaylight.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/helveticanowdisplaylight.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/helveticanowdisplaylight.svg#helveticanowdisplaylight') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Helvetica-Regular';
+  src: url('../fonts/helveticanowdisplayregular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/helveticanowdisplayregular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/helveticanowdisplayregular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/helveticanowdisplayregular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/helveticanowdisplayregular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/helveticanowdisplayregular.svg#helveticanowdisplayregular') format('svg'); /* Legacy iOS */
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Helvetica-Bold';
+  src: url('../fonts/helveticanowdisplaybold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/helveticanowdisplaybold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/helveticanowdisplaybold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/helveticanowdisplaybold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/helveticanowdisplaybold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/helveticanowdisplaybold.svg#helveticanowdisplaybold') format('svg'); /* Legacy iOS */
+  font-weight: bold;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Qanelas-Extra-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 3.75rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: 'Qanelas-Extra-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.caption {
+  font-family: 'Qanelas-Light', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: light;
+}
+.caption-strong{
+  font-family: 'Qanelas-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 13px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Helvetica-Light', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+}
+
+strong {
+  font-family: 'Helvetica-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  font-weight: 800;
+}

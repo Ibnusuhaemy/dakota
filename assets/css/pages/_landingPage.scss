@@ -1,0 +1,1510 @@
+//header ----------------------------------------------
+.header{
+    margin:50px 0 30px 0;
+
+    &__call-us{
+        margin: auto 0 auto auto;
+
+        &--text{           
+            display: flex;
+            flex-direction: row;
+            font-size:13px;
+        }
+
+        &--text:before{
+            content: "";
+            flex: 1 1;
+            border-bottom: 1px solid #000;
+            margin: auto;
+            margin-right: 20px;
+            width: 260px;
+        }
+    }
+
+    &__email-container {
+        position: relative;
+        min-height: 1px;
+    }
+
+    &__email-us {
+        display: inline-block;
+        transform: rotate(-90deg);
+        position: absolute;
+        right: -206px;
+        top: 220px;
+    }
+
+    &__dropdown{
+        margin-left:30px;
+
+        .dropdown-toggle{
+            background: $color-soft-white;
+            border: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 4px rgba(0,0,0,.12), 0 8px 8px rgba(0,0,0,.12), 6px 6px 4px rgba(0,0,0,.12);
+            padding: 12px;
+            &::after{
+                display:none;
+            }
+        }
+    }
+    .dropdown-menu.show{
+        top: 100% !important;
+        left: 0px !important;
+        transform: translate3d(-137px, 0px, 0px) !important;
+    }
+}
+//slider hero ----------------------------------------------
+.slider{
+    outline: none;
+
+    &__row{
+        width:100%;
+        margin: 0;
+    }
+
+    &__image{
+        width: 100%;
+        height: auto;
+
+        &--img{
+            max-width: 90%;
+        }
+    }
+
+    &__content{
+
+        .caption{
+            margin:30px 0 0 10px;
+        }
+
+        .hero__button{
+            margin:20px 0 0 10px;
+
+            .btn--yellow{
+                height: fit-content;
+                padding: 16px 24px;
+                margin: auto 10px auto 0; 
+            }
+        }
+    }
+}
+.js-hero-slider{
+    //button slick prev and next
+    padding:30px 0;
+    .slick-prev,
+    .slick-next{
+        display: none !important;
+    }
+
+    .slick-dots{
+        bottom:0;
+
+        .slick-active{
+            button:before{
+                background: $color-yellow;
+            }
+        }
+        li{
+            button:before{
+                opacity: 1;
+                color: transparent;
+                border-radius: 100%;
+                background: $color-light-yellow;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+}
+
+// who used ----------------------------
+.who-used{
+    background: $color-light-green;
+    position: relative;
+    padding: 70px 0 70px 0;
+
+    &__title{
+        z-index:10;
+        position: relative;
+
+        h2{
+            display: flex;
+            flex-direction: row;
+            max-width: 1140px;
+            margin: 0 auto;
+            
+            &::before{
+                content: "";
+                flex: 1 1;
+                border-bottom: 1px solid #000;
+                margin: auto;
+                position: absolute;
+                bottom: -18px;
+                left: 0;
+                margin-right: 20px;
+                width: 450px;
+            }
+        }
+    }
+
+    &__img{
+            
+        img{
+            margin:-70px auto 30px auto;
+            z-index: 8;
+            position: relative;
+            width: 550px;
+            height: auto;
+        }
+    }
+
+    &__content{
+        .row{
+            margin: 0;
+        }
+
+        &--body{
+            background: $color-soft-white;
+            padding: 16px;
+            margin: 0 6px;
+            border: none;
+            border-radius: 100px;
+        }
+    }
+}
+
+.bg-wave{
+    margin-top: -3px;
+}
+
+
+//statistict ------------------------------
+.statistict{
+    &__img-person {
+        width: auto;
+        max-width: 380px;
+        height: auto;
+        position: absolute;
+        left: 0;
+        top: -60px;
+    }
+    &__content{
+        padding:70px 0 10px 0;
+
+        &--garden{
+            padding: 0;
+            width: 100%;
+            &-img-box{
+                width: 60%;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            &-body-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        &--farm-pie{
+            padding: 0;
+            width: 100%;
+        }
+        &--farm{
+            &-img-box{
+                display:flex;
+                align-items: center;
+            }
+            &-body-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        &--pie{
+            &-img-box{
+                display:flex;
+                align-items: center;
+            }
+            &-body-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        &--text{
+            text-align: right;
+            margin-bottom: 30px;
+        }
+
+        &--img,&--body{
+            padding: 0;
+        }
+
+        &--body-text{
+            align-items: center;
+            margin-left: 6px;
+        }
+
+        &--img{
+            &-display{
+                width:300px;
+            }
+            &-display-2{
+                width:150px;
+            }
+            &-display-3{
+                height:100px;
+                width:auto;    
+                margin-right: 6px;
+            }
+        }
+    }
+
+}
+//learn ---------------------
+.learn{
+    padding:70px 0;
+    background:$color-soft-white;
+    color:$color-green;
+    position: relative;
+
+    &-1,&-2,&-3{
+        padding-bottom: 70px;
+    }
+
+    &-btn{
+        padding:16px 24px;
+    }
+    &__bg{
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        width: 300px;
+        bottom: -150px;
+    }
+}
+//they-used ---------------------------------------------
+.they-used{
+    background: $color-light-green;
+    padding: 70px 0 70px 0;
+    position: relative;
+
+    &__slider-container{
+        max-width: 960px;
+    }
+
+    &__title{
+        z-index:10;
+        position: relative;
+
+        h2{
+            display: inline-block;
+            position: relative;
+            background-image: url(../images/dakota-landing.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center right;
+            padding: 1em 4em 1em 0;
+            
+            &:before{
+                content: "";
+                width: 1140px;
+                height: 1px;
+                border-bottom: 1px solid $color-white;
+                position: absolute;
+                bottom: 30px;
+                right: 375px;
+            }
+        }
+    }
+
+    .slider{
+        padding:50px 0;
+
+        &__image{ 
+            display: flex;
+            justify-content: center;
+            align-content: center;
+
+            img{
+                width: 250px;
+                margin: auto;
+                box-shadow: 0px 20px 8px -16px rgba($color-soft-black,.5);
+                border-radius: 100%;
+            }
+        }
+
+        &__content{
+            &--text{
+                margin-top:70px;
+                margin-left: 12px;
+            }
+        }
+
+        &__quote{
+            height: 50px;
+            position: absolute;
+        }
+    }
+    
+    .slick-next, .slick-prev {
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        background-size: contain !important;
+        transition:all ease .2s;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+        opacity:0;
+    }
+    .slick-prev {
+        left:-50px;
+        background: url(../images/arrow.svg);
+
+        &:hover{
+            transform: scale(1.5) translate(-7px, -7px);
+        }
+    }
+    .slick-next {
+        background: url(../images/arrow.svg);
+        right:-50px;
+        transform: rotate(180deg) translateY(20px);
+        
+        &:hover{
+            transform: rotate(180deg) scale(1.5) translate(-7px, 7px);
+        }
+    }
+}
+
+//partner ---------------------------------------------
+.partner{
+    background: $color-soft-white;
+    padding: 70px 0 70px 0;
+    position: relative;
+    
+    &__slider-container{
+        max-width: 960px;
+    }
+
+    &__title{
+        z-index:10;
+        position: relative;
+
+        h2{
+            display: inline-block;
+            position: relative;
+            background-image: url(../images/dakota-image.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center right;
+            padding: 1em 6em 1em 0;
+            
+            &::before{
+                content: "";
+                width: 1140px;
+                height: 1px;
+                border-bottom: 1px solid $color-soft-black;
+                position: absolute;
+                bottom: 40px;
+                right: 240px;
+            }
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        right: 0;
+        bottom: -90px;
+        width: 350px;
+    }
+
+    &__slider{
+        background: $color-soft-white;
+
+        &--box{
+            padding:50px 0;
+        }
+    }
+
+    
+    .slick-slide{
+        outline: none;
+        
+        img{
+            display: block;
+            width: auto;
+            height: 100px;
+            margin: 0 auto;
+        }
+    }
+
+    
+    .slick-prev,
+    .slick-next{
+        display:none !important;
+    }
+
+
+
+}
+
+//contact ---------------------------------------------
+.contact{
+    padding: 70px 0 70px 0;
+    position: relative;
+
+    &__title{
+        z-index:10;
+        position: relative;
+        background-image: url(../images/dakota-landing-removebg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: 95px center;
+        padding: 2em 1em 2em 0;
+
+        h2{
+            display: inline-block;
+            position: relative;
+            
+            &:before{
+                content: "";
+                width: 1140px;
+                height: 1px;
+                border-bottom: 1px solid $color-soft-black;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        &--single {
+            background-image: none;
+            padding: 1em 0;
+        }
+    }
+
+    &__box{
+        margin:100px;
+
+    }
+    
+    &__content{
+        position: relative;
+        z-index: 10;
+    }
+
+    &__bg{
+        position: absolute;
+        left: -35%;
+        top: 0;
+        height: 500px;
+    }
+
+    .form{
+        &-control{
+            border-color:$color-green;
+            border-radius: 12px;
+            &::placeholder{
+                color:$color-green;
+            }
+        }
+
+        &-btn{
+            padding: 24px 64px;
+        }
+    }
+}
+/// Footer ----------------------------------------------------------
+
+.footer{
+    &__upper{
+        background: $color-soft-black;
+        padding: 16px 0;
+        color:white;
+
+        .language{
+            margin: auto 0;
+
+            &__text{
+                text-transform: capitalize;
+                display: inline;
+                margin: auto 15px auto 0;
+            }
+
+            &__flag{
+                display: inline;
+                margin: auto 0;
+                border-radius: 100%;
+                border: 1px solid $color-light-yellow;
+            }
+
+            &__btn{
+                color: $color-white;
+                box-shadow:none;
+                padding: 8px 16px;
+
+                &:hover,
+                &:focus{
+                    color: $color-black;
+                    background: $color-grey;
+                }
+            }
+
+            .dropup {
+                display: inline-block;
+                vertical-align: middle;
+                
+                .dropdown-toggle::after{
+                    display: none;
+                }
+            }
+        }
+
+        .upper-link {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            top: -2px;
+            left: 5px;
+
+            img {
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+
+    &__inner-container {
+        background: url(../images/footer-other-bg.png) center no-repeat;
+        background-size: cover;
+    }
+    
+    &__inner{
+        padding:120px 0 100px 0;
+        background: url(../images/bg-footer.png) center no-repeat;
+        filter: grayscale(100%);
+        color:white;
+        background-size: cover;
+        
+        &--custom-bg {
+            background-image: none;
+            filter: none;
+        }
+
+        .container{
+            .row {
+                justify-content: flex-end;
+            }
+        }
+
+        &--email{
+            margin-top: 6px;
+            overflow-wrap: break-word;
+        }
+        &--address{
+            overflow-wrap: break-word;
+            margin-top: 24px;
+        }
+    }
+    &__foot{
+        background: $color-soft-black;
+        padding: 16px 0;
+        color:white;
+        text-align: center;
+
+        &--custom-bg {
+            background-color: transparent;
+        }
+
+        &--img{
+            max-width: 200px;
+        }
+
+        .caption{
+            margin-top: 6px;
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// NOTEBOOK (1200px) RESPONSIVE NESS --------------------------------------------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(lg) {
+
+    .slider {
+        &__content {
+            h1 {
+                padding-right: 2em;
+            }
+
+            .hero {
+                &__button {
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
+    .who-used{
+        &__title{
+            h2{
+                margin-left: 16px;
+            }
+        }
+    }
+
+
+    // statistict ----------------------------
+    .statistict{
+
+        .container{
+            max-width: 100%;
+        }
+
+        &__content{
+            padding:30px 0 10px 0;
+
+            &--text{
+                margin-right: 16px;
+            }
+        }
+    }
+    
+    //partner ---------------------------------------------
+    .partner{
+        padding: 50px 0 50px 0;
+
+        
+        &__slider-container{
+            max-width: 768px;
+        }
+
+        &__bg {
+            position: absolute;
+            right: 0;
+            bottom: -120px;
+            width: 350px;
+        }
+
+        &__slider{
+            &--box{
+                padding:50px 0;
+            }
+        }
+
+        .slick-slide img {
+            height: 65px;
+        }
+
+    }
+
+    .learn{
+        &__bg{
+            width: 200px;
+            bottom: -120px;
+        }
+    }
+    
+    //they-used ---------------------------------------------
+    .they-used{
+        &__title{
+            h2{
+                position: relative;
+            }
+        }
+
+        &__slider-container{
+            max-width: 768px;
+        }
+
+    }
+
+    //contact ---------------------------------------------
+    .contact{
+        padding: 50px 0 50px 0;
+        
+        .container{
+            max-width: 100%;
+        }
+
+        &__box{
+            margin:100px;
+
+        }
+        
+        &__content{
+            position: relative;
+            z-index: 10;
+        }
+
+        &__bg{
+            position: absolute;
+            left: -35%;
+            top: 30px;
+            height: 400px;
+        }
+
+        .form{
+            &-control{
+                border-color:$color-green;
+                border-radius: 12px;
+                &::placeholder{
+                    color:$color-green;
+                }
+            }
+
+            &-btn{
+                padding: 24px 64px;
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// 1024px RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(lg-1) {
+
+    // statistict ----------------------------
+    .statistict{
+
+        .container{
+            max-width: 100%;
+        }
+
+        &__img-person {
+            top: auto;
+            bottom: 0;
+        }
+
+        &__content{
+            padding:30px 0 10px 0;
+
+            &--farm-pie{
+                margin:24px 0 0 0;
+            }
+            
+            &--farm{
+                width:100%;
+
+                &-img-box{
+                    display:flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    width: 60%;
+
+                    img{
+                        margin-right: 5rem;
+                    }
+                }
+            }
+            &--pie{
+                width:100%;
+                margin-top:24px;
+
+                &-img-box{
+                    display:flex;
+                    justify-content: flex-end;
+                    width: 60%;
+                    align-items: center;
+
+                    img{
+                        margin-right: 6rem;
+                    }
+                }
+            }
+
+        }
+    }
+    
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// TABLET RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(md-2) {
+    .header{
+        margin:30px 0 30px 0;
+        
+        &__call-us{
+
+            &--text:before{
+                margin-right: 10px;
+                width:150px;
+            }
+        }
+
+        &__email-us {
+            right: -150px;
+            top: 160px;
+        }
+
+        &__dropdown{
+            margin-left:30px;
+
+            .dropdown-toggle{
+                background: $color-soft-white;
+                border: 0;
+                border-radius: 8px;
+                box-shadow: 0 4px 4px rgba(0,0,0,.12), 0 8px 8px rgba(0,0,0,.12), 6px 6px 4px rgba(0,0,0,.12);
+                padding: 10px;
+                &::after{
+                    display:none;
+                }
+            }
+        }
+    }    
+
+    //slider hero ----------------------------------------------
+    .slider{
+
+        &__content{
+            .caption{
+                margin:0 0 0 10px;
+            }
+
+            .hero__button{
+                margin:12px 0 24px 10px;
+
+                .btn--yellow{
+                    height: fit-content;
+                    padding: 16px 24px;
+                    margin: auto 10px auto 0; 
+                }
+            }
+        }
+    }
+
+    
+    // who used ----------------------------
+    .who-used{
+        padding: 50px 0 50px 0;
+
+        &__title{
+
+            h2{
+                &:before{
+                    width: 350px;
+                }
+            }
+        }
+
+        &__content{
+            padding: 0 5px;
+            margin: 0 auto;
+            width: 100%;
+
+            &--body{
+                background: $color-soft-white;
+                padding: 16px;
+                margin: 0 3px;
+                border: none;
+                border-radius: 100px;
+            }
+        }
+    }
+    // statistict ----------------------------
+    .statistict{
+
+    
+        &__img-person {
+            max-width: 300px;
+        }
+        
+        &__content{
+            padding:30px 0 24px 0;
+        }
+    }
+
+    
+    //they-used ---------------------------------------------
+    .they-used{
+        &__slider-container{
+            max-width: 640px;
+        }
+
+        .slider{
+                
+            &__content{
+                .caption{
+                    margin:6px 0 0 10px;
+                }
+            }
+        }
+
+    }
+
+  //partner ---------------------------------------------
+  .partner{
+        &__slider-container{
+            max-width: 640px;
+        }
+
+        &__title {
+            h2 {
+                &::before {
+                    bottom: 35px;
+                    right: 216px;
+                }
+            }
+        }
+    }
+    
+    //contact ---------------------------------------------
+    .contact{
+        padding: 50px 0 50px 0;
+        
+        .container{
+            max-width: 100%;
+        }
+
+        &__title {
+            padding: 1em 1em 1em 0;
+        }
+
+        &__box{
+            margin: 100px auto;
+        }
+        
+        &__content{
+            position: relative;
+            margin-left:30px;
+            z-index: 10;
+        }
+
+        &__bg{
+            left: -220px;
+            top: 60px;
+            height: 400px;
+        }
+
+        .form{
+            &-control{
+                border-color:$color-green;
+                border-radius: 12px;
+                &::placeholder{
+                    color:$color-green;
+                }
+            }
+
+            &-btn{
+                padding: 24px 64px;
+            }
+        }
+    }
+        
+    /// Footer ----------------------------------------------------------
+
+    .footer{
+        &__inner{
+
+            &--1{
+                margin-left:auto;
+            }
+            
+            &--2{
+                margin-right:auto;
+            }
+        }
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// Mobile (768px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(md) {
+    .header{
+        margin:30px 0 30px 0;
+    
+        &__call-us{
+
+            &--text:before{
+                margin-right: 10px;
+                width:150px;
+                display:none;
+            }
+        }
+
+        &__email-us {
+            transform: none;
+            right: 15px;
+            top: 0;
+        }
+
+        &__dropdown{
+            margin-left:30px;
+
+            .dropdown-toggle{
+                background: $color-soft-white;
+                border: 0;
+                border-radius: 8px;
+                box-shadow: 0 4px 4px rgba(0,0,0,.12), 0 8px 8px rgba(0,0,0,.12), 6px 6px 4px rgba(0,0,0,.12);
+                padding: 10px;
+                padding: 8px;
+                position: relative;
+                top: 5px;
+                &::after{
+                    display:none;
+                }
+
+                img{
+                    width: 20px;
+                    height: auto;
+                }
+            }
+        }
+        .dropdown-menu.show{
+            top:calc(100% - 8px)!important;
+            transform: translate3d(-157px,0,0)!important;
+        }
+    }    
+
+    //hero slider ------------------------------------
+    .js-hero-slider{
+        padding: 0;
+
+        //slider hero ----------------------------------------------
+        .slider{
+
+            &__image{
+                max-width: 100%;
+                flex: 100%;
+                text-align: center;
+
+                &--img{
+                    margin: 0 auto;
+                    max-width: 300px;
+                }
+            }
+    
+            &__content{
+                max-width: 100%;
+                flex: 100%;
+
+                h1{
+                    margin:0 0 0 10px;
+                    white-space: normal;
+                    padding-right: 0;
+                }
+
+                .caption{
+                    margin:0 0 0 10px;
+                }
+    
+                .hero__button{
+                    margin: 10px 0;
+                    padding-bottom: 1em;
+    
+                    .btn--yellow{
+                        height: fit-content;
+                        padding: 16px 24px;
+                        margin: auto 10px auto auto; 
+                    }
+                    .btn--circle{
+                        margin-right: auto; 
+                    }
+                }
+            }
+        }
+        .slick-dots {
+            bottom: -30px;
+        }
+    }
+
+    .slick-dotted.slick-slider{
+        margin:50px 0;
+    }
+    
+    //who-used ---------------------------------------------
+    .who-used{
+
+        &__title{
+
+            h2{
+                &:before{
+                    width: 150px;
+                }
+            }
+        }
+        
+        .container{
+            max-width: 100%;
+        }
+        &__img{
+            img{
+                margin: -70px auto 0px auto;
+                width: 300px;
+            }
+        }
+        &__content{
+            &--body{
+                flex: 100%;
+                margin: 8px auto;
+            }
+        }
+
+    }
+
+    // statistict ----------------------------
+    .statistict{
+        &__img-person {
+            position: relative;
+            margin: auto;
+            display: block;
+            width: 100%;
+        }
+
+        &__content{
+            padding:30px 0 24px 0;
+    
+            &--img{
+                &-display{
+                    width:150px;
+                    margin-right:4rem; 
+                }
+            }
+            
+            &--text {
+                margin-right: auto;
+                text-align: center;
+            }
+        }
+    }
+
+    .learn{
+        &__bg {
+            width: 120px;
+            bottom: -60px;
+        }
+    }
+    
+    //they-used ---------------------------------------------
+    .they-used{
+        &__slider-container{
+            max-width: 100%;
+        }
+
+        .slider{
+            &__image{
+                img{
+                    width:150px;
+                }
+            }
+        }
+        
+        .slick-prev,
+        .slick-next{
+            display:none !important;
+        }
+
+    }
+
+    
+    //partner ---------------------------------------------
+    .partner{
+        &__slider-container{
+            max-width: 640px;
+        }
+        &__bg{
+            bottom: -90px;
+            width: 250px;
+            z-index: 15;
+        }
+        &__slider{
+            &--img{
+                max-width: 100%;
+            }
+        }
+    }
+    
+    //contact ---------------------------------------------
+    .contact{
+        padding: 50px 0 50px 0;
+        
+        .container{
+            max-width: 100%;
+        }
+
+        &__box{
+            margin:50px auto;
+
+            .row{
+                flex-direction: column-reverse;
+                margin: 0;
+            }
+
+        }
+        
+        &__content{
+            flex: 100%;
+            max-width: 100%;
+            margin-left: 8px;
+        }
+
+        &__images{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        &__bg{
+            position: relative;
+            height: 300px;
+            top:0;
+            left: 0;
+            max-width: 90%;
+            height: auto;
+        }
+
+        .form{
+            &-control{
+                border-color:$color-green;
+                border-radius: 12px;
+                &::placeholder{
+                    color:$color-green;
+                }
+            }
+
+            &-btn{
+                padding: 24px 64px;
+            }
+        }
+    }
+        
+    /// Footer ----------------------------------------------------------
+
+    .footer{
+        &__upper{
+            .sign-in{
+                &__btn{
+                    padding: 8px 16px;
+                    margin: auto 0 auto 8px;
+                }
+            }
+
+            .language{
+
+                margin: auto 16px auto auto;
+                
+
+                &__text{
+                    margin: auto 6px auto 0;
+                }
+
+
+                &__btn{
+                    padding:0;
+                }
+
+                
+                .dropup .dropdown-toggle::after{
+                    margin-left: 6px;
+                }
+            }
+        }
+        &__inner{
+            padding:70px 0 70px 0;
+
+            .container{
+                padding: 0;
+
+                .row{
+                    margin: 0;
+                }
+            }
+
+            &--1{
+                margin-left:auto;
+            }
+            
+            &--2{
+                margin-right:auto;
+            }
+
+            &--email{
+                overflow-wrap: break-word;
+            }
+            &--address{
+                overflow-wrap: break-word;
+            }
+        }
+    }
+}
+
+@include media-query(sm) {
+
+    /// They Used ----------------------------------------------------------
+    .they-used {
+        &__title {
+            h2 {
+                padding-right: 0;
+
+                &::before {
+                    right: 200px;
+                }
+            }
+        }
+    }
+
+    /// Footer ----------------------------------------------------------
+    .footer{
+        &__inner{
+            background-position: bottom center;
+            background-size: auto;
+            &--1{
+                padding-left: 30px;
+                padding-right: 30px;
+                margin-bottom: 40px;
+            }
+            
+            &--2{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// Mobile (480px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(xs) {
+    .header{
+        &__call-us{
+            margin: 20px 0 auto auto;
+            flex: 60%;
+        }
+        &__email-us {
+            left: 15px;
+            right: auto;
+            margin-top: 0;
+        }
+    }
+    .js-hero-slider {
+        .slider {
+            &__content {
+                h1 {
+                    word-break: break-word;
+                }
+                .hero {
+                    &__button {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .who-used{
+
+        &__img{
+                img {
+                margin: -10px auto 0 auto;
+                width: 300px;
+            }
+        } 
+    }
+
+    .statistict{
+        &__content {
+            padding: 30px 9px 24px 8px;
+
+            &--img{
+                &-display{
+                    width:120px;
+                    margin-right:0; 
+                }
+            }
+            
+            &--body-one,
+            &--body-two {
+                display: block !important;
+            }
+
+            &--farm-img-box{ 
+                img {
+                    margin-right: 0;
+                }
+            }
+            &--pie-img-box{ 
+                img {
+                    margin-right: 10px;
+                    height: 70px;
+                }
+            }
+        }
+    }
+
+    
+    .learn{
+        &__bg {
+            width: 100px;
+            bottom: -70px;
+        }
+    }
+
+    .they-used{
+
+        .slider{
+            &__row{
+                flex-direction: column;
+            }
+            &__content{
+                &--text {
+                margin-top: 40px;
+                }
+            }
+            &__quote{
+                height: 30px;
+            }
+        }
+    }
+
+    .partner{
+        &__title {
+            h2 {
+                padding-right: 4.5em;
+
+                &::before {
+                    right: 160px;
+                }
+            }
+        }
+        &__bg {
+            bottom: -30px;
+            width: 150px;
+        }
+    }
+
+    .footer {
+        &__upper {
+            .sign-in {
+                flex-basis: 100%;
+                margin-bottom: 1em;
+
+                &__btn {
+                    margin-left: 0;
+                }
+            }
+            .language {
+                text-align: left !important;
+
+            }
+        }
+    }
+}
