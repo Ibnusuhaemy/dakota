@@ -484,6 +484,11 @@
                 right: 0;
             }
         }
+
+        &--single {
+            background-image: none;
+            padding: 1em 0;
+        }
     }
 
     &__box{
