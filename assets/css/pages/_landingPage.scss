@@ -581,12 +581,23 @@
             }
         }
     }
+
+    &__inner-container {
+        background: url(../images/footer-other-bg.png) center no-repeat;
+        background-size: cover;
+    }
+    
     &__inner{
         padding:120px 0 100px 0;
         background: url(../images/bg-footer.png) center no-repeat;
         filter: grayscale(100%);
         color:white;
         background-size: cover;
+        
+        &--custom-bg {
+            background-image: none;
+            filter: none;
+        }
 
         .container{
             .row {
@@ -608,6 +619,10 @@
         padding: 16px 0;
         color:white;
         text-align: center;
+
+        &--custom-bg {
+            background-color: transparent;
+        }
 
         &--img{
             max-width: 200px;
@@ -1473,6 +1488,23 @@
         &__bg {
             bottom: -30px;
             width: 150px;
+        }
+    }
+
+    .footer {
+        &__upper {
+            .sign-in {
+                flex-basis: 100%;
+                margin-bottom: 1em;
+
+                &__btn {
+                    margin-left: 0;
+                }
+            }
+            .language {
+                text-align: left !important;
+
+            }
         }
     }
 }
