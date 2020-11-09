@@ -1,0 +1,259 @@
+.header-hero {
+  &--news {
+    background-image: url(../images/dakota-hero.png);
+    background-size: cover;
+    background-position: top center;
+    padding-top: 21em;
+    padding-bottom: 12em;
+  }
+}
+
+.news-description {
+  &__content-shadow {
+    padding-right: 0;
+    -webkit-box-shadow: 7px 0px 16px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 0px 16px -10px rgba(0,0,0,0.75);
+    box-shadow: 7px 0px 16px -10px rgba(0,0,0,0.75);
+    background-color: $color-white;
+  }
+  
+  &__content-left {
+    position: relative;
+    top: -100px;
+    background-color: $color-white;
+    padding: 3em;
+  }
+
+  &__video {
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 2px 16px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 16px -3px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 16px -3px rgba(0,0,0,0.75);
+    overflow: hidden;
+    margin-bottom: 3em;
+  }
+
+  &__text {
+    margin-bottom: 6em;
+
+    p {
+      font-family: 'Helvetica-Regular', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      font-size: 1rem;
+      line-height: 1.2;
+      color: $color-soft-black;
+      margin-bottom: 1em;
+    }
+  }
+
+  &__like {
+    margin-bottom: 2em;
+  }
+
+  &__content-title {
+    font-family: 'Helvetica-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    line-height: 1.2;
+    margin-bottom: .25em;
+  }
+
+  &__share {
+    margin-bottom: 3em;
+  }
+
+  &__share-item {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &--facebook {
+      background-color: $color-facebook;
+    }
+
+    &--twitter {
+      background-color: $color-twitter;
+    }
+
+    &--whatsapp {
+      background-color: $color-whatsapp;
+    }
+  }
+  
+  &__share-item-icon {
+    padding: 8px 14px;
+    -webkit-box-shadow: 2px 2px 16px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 16px -7px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 16px -7px rgba(0,0,0,0.75);
+
+    img {
+      width: 16px;
+      height: auto;
+    }
+  }
+  
+  &__share-item-text {
+    padding: .75em 3em .75em 1em;
+    color: $color-white;
+    font-family: 'Qanelas-Extra-Bold', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    font-size: 1rem;
+    line-height: 1.1;
+    text-align: left;
+    
+    &--facebook {
+      background-color: darken($color-facebook, 5%);
+    }
+
+    &--twitter {
+      background-color: darken($color-twitter, 5%);
+    }
+
+    &--whatsapp {
+      background-color: darken($color-whatsapp, 5%);
+    }
+  }
+
+  &__form-comment {
+    .form-control {
+      font-family: 'Helvetica-Light', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+      font-size: 1.2rem;
+      border-color: $color-green;
+      border-radius: 6px;
+
+      &::placeholder {
+        color: $color-green;
+      }
+    }
+
+    .btn {
+      padding: 1.5em 2.5em;
+      -webkit-box-shadow: 2px 2px 16px -7px rgba(0,0,0,0.75);
+      -moz-box-shadow: 2px 2px 16px -7px rgba(0,0,0,0.75);
+      box-shadow: 2px 2px 16px -7px rgba(0,0,0,0.75);
+    }
+  }
+
+  &__share-icon-only {
+    padding: 2em;
+  }
+
+  &__share-icon-only-item {
+    display: block;
+    padding-left: .5em;
+    padding-right: .5em;
+  }
+
+  &__related-article {
+    padding: 0 2em;
+
+    .btn {
+      font-size: .65rem;
+
+      img {
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+
+  &__related-article-video {
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 2px 16px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 16px -3px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 16px -3px rgba(0,0,0,0.75);
+    overflow: hidden;
+  }
+
+  &__related-article-item {
+    padding-right: 0;
+  }
+
+  &__related-article-title {
+    font-size: .85rem;
+    margin-bottom: .5em;
+  }
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// Dekstop (1200px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(lg) {
+
+  .news-description {    
+    // Shadow ----------------------------
+    &__content-shadow {
+      box-shadow: none;
+    }
+    
+    // Share Article ----------------------------
+    &__share-item {
+      margin-bottom: .75em;
+    }
+  }
+
+}
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// Tablet (992px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(md-2) {
+
+  .news-description {  
+
+    // Content Title ----------------------------
+    &__content-title {
+      margin-bottom: .75em;
+    }
+
+    // Content Left ----------------------------
+    &__like {
+      overflow: hidden;
+    }
+
+    // Content Right ----------------------------
+    &__content-right {
+      margin-bottom: 3em;
+    }
+
+    &__related-article {
+      margin-bottom: 1em;
+    }
+    
+    &__related-article-item {
+      padding-right: 15px;
+    }
+    
+    &__related-article-title {
+      margin-top: 1em;
+    }
+  }
+}
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+// Mobile (768px) RESPONSIVE NESS ---------------------
+/////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////
+@include media-query(md) {
+
+  .news-description {
+    &__content-left {
+      top: auto;
+      padding: 2em 15px 2em 0;
+    }
+
+    &__share-icon-only {
+      padding: 1em 15px;
+    }
+    
+    &__related-article {
+      padding: 1em 15px;
+    }
+  }
+}
