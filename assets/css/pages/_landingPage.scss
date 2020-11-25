@@ -219,16 +219,16 @@
 
 //statistict ------------------------------
 .statistict{
+    position: relative;
+    top: -60px;
+
     &__img-person {
         width: auto;
         max-width: 380px;
         height: auto;
-        position: absolute;
-        left: 0;
-        top: -60px;
     }
     &__content{
-        padding:70px 0 10px 0;
+        padding: 0 0 10px 0;
 
         &--garden{
             padding: 0;
@@ -311,6 +311,7 @@
     background:$color-soft-white;
     color:$color-green;
     position: relative;
+    margin-top: -60px;
 
     &-1,&-2,&-3{
         padding-bottom: 70px;
@@ -344,7 +345,7 @@
         h2{
             display: inline-block;
             position: relative;
-            background-image: url(../images/dakota-landing.png);
+            background-image: url(../images/dakota-text.png);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center right;
@@ -439,7 +440,7 @@
         h2{
             display: inline-block;
             position: relative;
-            background-image: url(../images/dakota-image.png);
+            background-image: url(../images/dakota-text-group.png);
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center right;
@@ -502,7 +503,7 @@
     &__title{
         z-index:10;
         position: relative;
-        background-image: url(../images/dakota-landing-removebg.png);
+        background-image: url(../images/dakota-text.png);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: 95px center;
@@ -714,6 +715,9 @@
                 margin-right: 16px;
             }
         }
+        &__img-person {
+            max-width: 330px;
+        }
     }
     
     //partner ---------------------------------------------
@@ -814,12 +818,14 @@
 
     // statistict ----------------------------
     .statistict{
+        top: 0;
 
         .container{
             max-width: 100%;
         }
 
         &__img-person {
+            position: absolute;
             top: auto;
             bottom: 0;
         }
@@ -862,6 +868,9 @@
             }
 
         }
+    }
+    .learn {
+        margin-top: auto;
     }
     
 }
