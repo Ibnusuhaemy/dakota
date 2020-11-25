@@ -494,29 +494,34 @@ strong {
 
 .partner {
   background: #f6f6f6;
-  padding: 70px 0 70px 0;
+  padding: 0 0 70px 0;
   position: relative; }
   .partner__slider-container {
     max-width: 960px; }
   .partner__title {
     z-index: 10;
-    position: relative; }
+    position: relative;
+    margin-top: -40px; }
     .partner__title h2 {
       display: inline-block;
       position: relative;
-      background-image: url(../images/dakota-text-group.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center right;
       padding: 1em 6em 1em 0; }
-      .partner__title h2::before {
+      .partner__title h2:before {
+        content: "dakota";
+        text-transform: uppercase;
+        font-size: 3.8em;
+        color: #000;
+        opacity: 0.1;
+        position: absolute;
+        top: -13px; }
+      .partner__title h2::after {
         content: "";
-        width: 1140px;
+        width: 120%;
         height: 1px;
         border-bottom: 1px solid #181b17;
         position: absolute;
-        bottom: 40px;
-        right: 240px; }
+        bottom: 30px;
+        right: 322px; }
   .partner__bg {
     position: absolute;
     right: 0;
