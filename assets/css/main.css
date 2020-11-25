@@ -393,7 +393,8 @@ strong {
       flex-direction: column; }
     .statistict__content--text {
       text-align: right;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      line-height: 26px; }
     .statistict__content--img, .statistict__content--body {
       padding: 0; }
     .statistict__content--body-text {
