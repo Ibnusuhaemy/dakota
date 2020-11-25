@@ -337,7 +337,8 @@ strong {
     margin: -80px auto 30px auto;
     z-index: 8;
     position: relative;
-    width: 750px;
+    max-width: 750px;
+    width: 100%;
     height: auto; }
   .who-used__content .row {
     margin: 0; }
@@ -460,7 +461,9 @@ strong {
         left: 364px; }
         @media only screen and (max-width: 991.98px) {
           .they-used__title h2:before {
-            left: 300px; } }
+            left: 300px;
+            font-size: 6rem;
+            top: 12px; } }
         @media only screen and (max-width: 767.98px) {
           .they-used__title h2:before {
             left: 144px; } }
@@ -469,7 +472,7 @@ strong {
             left: 74px; } }
         @media only screen and (max-width: 479.98px) {
           .they-used__title h2:before {
-            font-size: 6rem;
+            font-size: 4rem;
             top: 54px; } }
         @media only screen and (max-width: 424.98px) {
           .they-used__title h2:before {
@@ -557,9 +560,13 @@ strong {
         position: absolute;
         top: -13px;
         left: 0; }
-        @media only screen and (max-width: 479.98px) {
+        @media only screen and (max-width: 991.98px) {
           .partner__title h2:before {
             font-size: 6rem;
+            top: 12px; } }
+        @media only screen and (max-width: 479.98px) {
+          .partner__title h2:before {
+            font-size: 4rem;
             top: 0; } }
       .partner__title h2::after {
         content: "";
@@ -600,12 +607,18 @@ strong {
   .partner .slick-prev {
     left: -50px;
     background: url(../images/arrow.svg); }
+    @media only screen and (max-width: 767.98px) {
+      .partner .slick-prev {
+        left: -40px; } }
     .partner .slick-prev:hover {
       transform: scale(1.5) translate(-7px, -7px); }
   .partner .slick-next {
     background: url(../images/arrow.svg);
     right: -50px;
     transform: rotate(180deg) translateY(20px); }
+    @media only screen and (max-width: 767.98px) {
+      .partner .slick-next {
+        right: -40px; } }
     .partner .slick-next:hover {
       transform: rotate(180deg) scale(1.5) translate(-7px, 7px); }
 
@@ -628,10 +641,15 @@ strong {
         position: absolute;
         top: -44px;
         left: 74px; }
+        @media only screen and (max-width: 991.98px) {
+          .contact__title h2:before {
+            left: 55px;
+            font-size: 6rem;
+            top: -25px; } }
         @media only screen and (max-width: 479.98px) {
           .contact__title h2:before {
-            top: -29px;
-            font-size: 6rem; } }
+            top: -10px;
+            font-size: 4rem; } }
         @media only screen and (max-width: 424.98px) {
           .contact__title h2:before {
             left: 25px; } }
@@ -884,7 +902,9 @@ strong {
   .they-used .slider__content .caption {
     margin: 6px 0 0 10px; }
   .partner__slider-container {
-    max-width: 640px; }
+    max-width: 640px;
+    padding-left: 15px;
+    padding-right: 15px; }
   .partner__title h2::before {
     bottom: 35px;
     right: 216px; }
@@ -1018,7 +1038,9 @@ strong {
   .they-used .slick-next {
     display: none !important; }
   .partner__slider-container {
-    max-width: 640px; }
+    max-width: 640px;
+    padding-left: 45px;
+    padding-right: 45px; }
   .partner__bg {
     bottom: -90px;
     width: 250px;
@@ -1138,7 +1160,8 @@ strong {
   .partner__title h2 {
     padding-right: 4.5em; }
     .partner__title h2::before {
-      right: 160px; }
+      right: 160px;
+      top: 40px; }
   .partner__bg {
     bottom: -30px;
     width: 150px; }
