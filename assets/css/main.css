@@ -426,7 +426,7 @@ strong {
 
 .they-used {
   background: #57c479;
-  padding: 70px 0 70px 0;
+  padding: 60px 0 70px 0;
   position: relative; }
   .they-used__slider-container {
     max-width: 960px; }
@@ -436,12 +436,17 @@ strong {
     .they-used__title h2 {
       display: inline-block;
       position: relative;
-      background-image: url(../images/dakota-text.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center right;
       padding: 1em 4em 1em 0; }
       .they-used__title h2:before {
+        content: "dakota";
+        text-transform: uppercase;
+        font-size: 3.6em;
+        color: #fff;
+        opacity: 0.3;
+        position: absolute;
+        top: 0;
+        right: -177px; }
+      .they-used__title h2:after {
         content: "";
         width: 1140px;
         height: 1px;

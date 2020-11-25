@@ -335,7 +335,7 @@
 //they-used ---------------------------------------------
 .they-used{
     background: $color-light-green;
-    padding: 70px 0 70px 0;
+    padding: 60px 0 70px 0;
     position: relative;
 
     &__slider-container{
@@ -349,13 +349,20 @@
         h2{
             display: inline-block;
             position: relative;
-            background-image: url(../images/dakota-text.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: center right;
             padding: 1em 4em 1em 0;
+
+            &:before {
+                content: "dakota";
+                text-transform: uppercase;
+                font-size: 3.6em;
+                color: #fff;
+                opacity: 0.3;
+                position: absolute;
+                top: 0;
+                right: -177px;
+            }
             
-            &:before{
+            &:after{
                 content: "";
                 width: 1140px;
                 height: 1px;
