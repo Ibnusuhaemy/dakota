@@ -362,6 +362,10 @@
                 position: absolute;
                 top: 0;
                 left:364px;
+
+                @include media-query(md-2) {
+                    left: 300px;
+                }
             }
             
             &:after{
@@ -403,6 +407,10 @@
         &__quote{
             height: 50px;
             position: absolute;
+        }
+
+        &__row {
+            max-width: unset !important;
         }
     }
     
@@ -465,6 +473,7 @@
                 opacity: 0.1;
                 position: absolute;
                 top: -13px;
+                left: 0;
             }
             
             &::after{
@@ -772,9 +781,6 @@
     
     //partner ---------------------------------------------
     .partner{
-        padding: 50px 0 50px 0;
-
-        
         &__slider-container{
             max-width: 768px;
         }
