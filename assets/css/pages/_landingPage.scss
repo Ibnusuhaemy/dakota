@@ -366,6 +366,10 @@
                 @include media-query(md-2) {
                     left: 300px;
                 }
+
+                @include media-query(md) {
+                    left: 144px;
+                }
             }
             
             &:after{
