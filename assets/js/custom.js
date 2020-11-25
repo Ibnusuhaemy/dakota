@@ -346,3 +346,26 @@ window.onload = function () {
   });
   chartProyeksi2.render();
 }
+
+var supportedLocale = {
+  id_ID: {
+      name: "Bahasa Indonesia",
+      imageSrc: "assets/images/indonesia-flag.jpg"
+  },
+  en_US: {
+      name: "English (US)",
+      imageSrc: "assets/images/us-flag.jpg"
+  }
+};
+
+$.each($(".language-set"), function(key, elem) {
+  $(elem).click(function(event) {
+      var locale = $(this).data('locale');
+      var localeSelectData = supportedLocale[locale];
+
+      // set language based on locale
+      $("#dropdownLanguageButton").html(
+          '<p class="language__text caption">' + localeSelectData.name + '</p><img src="' + localeSelectData.imageSrc + '" class="language__flag" width="32" height="32" alt="menu">'
+      );
+  });
+});
