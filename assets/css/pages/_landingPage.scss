@@ -521,24 +521,31 @@
     &__title{
         z-index:10;
         position: relative;
-        background-image: url(../images/dakota-text.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: 95px center;
         padding: 2em 1em 2em 0;
 
         h2{
             display: inline-block;
             position: relative;
-            
-            &:before{
-                content: "";
-                width: 1140px;
-                height: 1px;
-                border-bottom: 1px solid $color-soft-black;
+
+            &:before {
+                content: "dakota";
+                text-transform: uppercase;
+                font-size: 3.8em;
+                color: #000;
+                opacity: .1;
                 position: absolute;
-                bottom: 0;
-                right: 0;
+                top: -44px;
+                left: 74px;
+            }
+            
+            &::after{
+                content: "";
+                width: 134%;
+                height: 1px;
+                border-bottom: 1px solid #181b17;
+                position: absolute;
+                bottom: -12px;
+                right: 80px;
             }
         }
 

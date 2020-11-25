@@ -548,22 +548,27 @@ strong {
   .contact__title {
     z-index: 10;
     position: relative;
-    background-image: url(../images/dakota-text.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 95px center;
     padding: 2em 1em 2em 0; }
     .contact__title h2 {
       display: inline-block;
       position: relative; }
       .contact__title h2:before {
+        content: "dakota";
+        text-transform: uppercase;
+        font-size: 3.8em;
+        color: #000;
+        opacity: .1;
+        position: absolute;
+        top: -44px;
+        left: 74px; }
+      .contact__title h2::after {
         content: "";
-        width: 1140px;
+        width: 134%;
         height: 1px;
         border-bottom: 1px solid #181b17;
         position: absolute;
-        bottom: 0;
-        right: 0; }
+        bottom: -12px;
+        right: 80px; }
     .contact__title--single {
       background-image: none;
       padding: 1em 0; }
