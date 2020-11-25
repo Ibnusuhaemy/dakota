@@ -538,9 +538,26 @@ strong {
       width: auto;
       height: 100px;
       margin: 0 auto; }
-  .partner .slick-prev,
+  .partner .slick-next, .partner .slick-prev {
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background-size: contain !important;
+    transition: all ease .2s; }
+  .partner .slick-prev:before,
+  .partner .slick-next:before {
+    opacity: 0; }
+  .partner .slick-prev {
+    left: -50px;
+    background: url(../images/arrow.svg); }
+    .partner .slick-prev:hover {
+      transform: scale(1.5) translate(-7px, -7px); }
   .partner .slick-next {
-    display: none !important; }
+    background: url(../images/arrow.svg);
+    right: -50px;
+    transform: rotate(180deg) translateY(20px); }
+    .partner .slick-next:hover {
+      transform: rotate(180deg) scale(1.5) translate(-7px, 7px); }
 
 .contact {
   padding: 70px 0 70px 0;

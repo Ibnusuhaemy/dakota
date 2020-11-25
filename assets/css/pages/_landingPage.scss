@@ -503,13 +503,35 @@
         }
     }
 
-    
-    .slick-prev,
-    .slick-next{
-        display:none !important;
+    .slick-next, .slick-prev {
+        top: 50%;
+        width: 40px;
+        height: 40px;
+        background-size: contain !important;
+        transition:all ease .2s;
     }
 
+    .slick-prev:before,
+    .slick-next:before {
+        opacity:0;
+    }
+    .slick-prev {
+        left:-50px;
+        background: url(../images/arrow.svg);
 
+        &:hover{
+            transform: scale(1.5) translate(-7px, -7px);
+        }
+    }
+    .slick-next {
+        background: url(../images/arrow.svg);
+        right:-50px;
+        transform: rotate(180deg) translateY(20px);
+        
+        &:hover{
+            transform: rotate(180deg) scale(1.5) translate(-7px, 7px);
+        }
+    }
 
 }
 
