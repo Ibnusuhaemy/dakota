@@ -346,7 +346,8 @@ strong {
     padding: 16px;
     margin: 0 6px;
     border: none;
-    border-radius: 100px; }
+    border-radius: 100px;
+    font-family: 'Helvetica-Light', sans-serif; }
 
 .bg-wave {
   margin-top: -3px; }
