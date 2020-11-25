@@ -391,6 +391,10 @@
                     font-size: 6rem;
                     top: 54px;
                 }
+
+                @include media-query(xs-1) {
+                    left: 32px;
+                }
             }
             
             &:after{
@@ -487,6 +491,10 @@
 
             @include media-query(xs) {
                 max-width: 350px;
+            }
+
+            @include media-query(xs-1) {
+                max-width: 300px;
             }
         }
     }
@@ -619,6 +627,10 @@
                 @include media-query(xs) {
                     top:-29px;
                     font-size: 6rem;
+                }
+
+                @include media-query(xs-1) {
+                    left: 25px;
                 }
             }
             
