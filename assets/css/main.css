@@ -252,7 +252,8 @@ strong {
     position: relative; }
   .slider__image {
     width: 50%;
-    position: relative; }
+    position: relative;
+    top: 45px; }
     .slider__image--img {
       max-width: 100%;
       height: auto; }
@@ -440,12 +441,12 @@ strong {
       .they-used__title h2:before {
         content: "dakota";
         text-transform: uppercase;
-        font-size: 3.6em;
+        font-size: 8rem;
         color: #fff;
         opacity: 0.3;
         position: absolute;
         top: 0;
-        right: -177px; }
+        left: 364px; }
       .they-used__title h2:after {
         content: "";
         width: 1140px;
@@ -459,7 +460,8 @@ strong {
     .they-used .slider__image {
       display: flex;
       justify-content: center;
-      align-content: center; }
+      align-content: center;
+      top: 0; }
       .they-used .slider__image img {
         width: 250px;
         margin: auto;
@@ -509,7 +511,7 @@ strong {
       .partner__title h2:before {
         content: "dakota";
         text-transform: uppercase;
-        font-size: 3.8em;
+        font-size: 8rem;
         color: #000;
         opacity: 0.1;
         position: absolute;
@@ -572,7 +574,7 @@ strong {
       .contact__title h2:before {
         content: "dakota";
         text-transform: uppercase;
-        font-size: 3.8em;
+        font-size: 8rem;
         color: #000;
         opacity: .1;
         position: absolute;
