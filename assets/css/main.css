@@ -367,6 +367,9 @@ strong {
         width: 60%;
         align-items: center;
         justify-content: flex-end; }
+        @media only screen and (max-width: 479.98px) {
+          .statistict__content--garden-img-box {
+            justify-content: center; } }
       .statistict__content--garden-body-box {
         display: flex;
         justify-content: center;
@@ -378,6 +381,9 @@ strong {
     .statistict__content--farm-img-box {
       display: flex;
       align-items: center; }
+      @media only screen and (max-width: 479.98px) {
+        .statistict__content--farm-img-box {
+          justify-content: center !important; } }
     .statistict__content--farm-body-box {
       display: flex;
       justify-content: center;
@@ -386,6 +392,9 @@ strong {
     .statistict__content--pie-img-box {
       display: flex;
       align-items: center; }
+      @media only screen and (max-width: 479.98px) {
+        .statistict__content--pie-img-box {
+          justify-content: center !important; } }
     .statistict__content--pie-body-box {
       display: flex;
       justify-content: center;
@@ -457,6 +466,10 @@ strong {
         @media only screen and (max-width: 639.98px) {
           .they-used__title h2:before {
             left: 74px; } }
+        @media only screen and (max-width: 479.98px) {
+          .they-used__title h2:before {
+            font-size: 6rem;
+            top: 54px; } }
       .they-used__title h2:after {
         content: "";
         width: 1140px;
@@ -513,8 +526,13 @@ strong {
   .partner__slider-container {
     max-width: 960px; }
     .partner__slider-container .js-partner-slider {
-      max-width: 400px;
       margin: auto; }
+      @media only screen and (max-width: 575.98px) {
+        .partner__slider-container .js-partner-slider {
+          max-width: 400px; } }
+      @media only screen and (max-width: 479.98px) {
+        .partner__slider-container .js-partner-slider {
+          max-width: 350px; } }
   .partner__title {
     z-index: 10;
     position: relative;
@@ -532,6 +550,10 @@ strong {
         position: absolute;
         top: -13px;
         left: 0; }
+        @media only screen and (max-width: 479.98px) {
+          .partner__title h2:before {
+            font-size: 6rem;
+            top: 0; } }
       .partner__title h2::after {
         content: "";
         width: 120%;
@@ -540,6 +562,9 @@ strong {
         position: absolute;
         bottom: 30px;
         right: 322px; }
+        @media only screen and (max-width: 479.98px) {
+          .partner__title h2::after {
+            right: 215px; } }
   .partner__bg {
     position: absolute;
     right: 0;
@@ -596,6 +621,10 @@ strong {
         position: absolute;
         top: -44px;
         left: 74px; }
+        @media only screen and (max-width: 479.98px) {
+          .contact__title h2:before {
+            top: -29px;
+            font-size: 6rem; } }
       .contact__title h2::after {
         content: "";
         width: 134%;

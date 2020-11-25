@@ -242,6 +242,10 @@
                 width: 60%;
                 align-items: center;
                 justify-content: flex-end;
+
+                @include media-query(xs) {
+                    justify-content: center;
+                }
             }
             &-body-box{
                 display: flex;
@@ -259,6 +263,10 @@
             &-img-box{
                 display:flex;
                 align-items: center;
+
+                @include media-query(xs) {
+                    justify-content: center !important;
+                }
             }
             &-body-box{
                 display: flex;
@@ -271,6 +279,10 @@
             &-img-box{
                 display:flex;
                 align-items: center;
+
+                @include media-query(xs) {
+                    justify-content: center !important;
+                }
             }
             &-body-box{
                 display: flex;
@@ -375,8 +387,9 @@
                     left: 74px;
                 }
 
-                @include media-query(sm) {
-
+                @include media-query(xs) {
+                    font-size: 6rem;
+                    top: 54px;
                 }
             }
             
@@ -467,8 +480,14 @@
         max-width: 960px;
 
         .js-partner-slider {
-            max-width: 400px;
             margin: auto;
+            @include media-query(sm) {
+                max-width: 400px;
+            }
+
+            @include media-query(xs) {
+                max-width: 350px;
+            }
         }
     }
 
@@ -491,6 +510,11 @@
                 position: absolute;
                 top: -13px;
                 left: 0;
+
+                @include media-query(xs) {
+                    font-size: 6rem;
+                    top: 0;
+                }
             }
             
             &::after{
@@ -501,6 +525,10 @@
                 position: absolute;
                 bottom: 30px;
                 right: 322px;
+
+                @include media-query(xs) {
+                    right: 215px;
+                }
             }
         }
     }
@@ -587,6 +615,11 @@
                 position: absolute;
                 top: -44px;
                 left: 74px;
+
+                @include media-query(xs) {
+                    top:-29px;
+                    font-size: 6rem;
+                }
             }
             
             &::after{
