@@ -454,6 +454,9 @@ strong {
         @media only screen and (max-width: 767.98px) {
           .they-used__title h2:before {
             left: 144px; } }
+        @media only screen and (max-width: 639.98px) {
+          .they-used__title h2:before {
+            left: 74px; } }
       .they-used__title h2:after {
         content: "";
         width: 1140px;
@@ -509,6 +512,9 @@ strong {
   position: relative; }
   .partner__slider-container {
     max-width: 960px; }
+    .partner__slider-container .js-partner-slider {
+      max-width: 400px;
+      margin: auto; }
   .partner__title {
     z-index: 10;
     position: relative;

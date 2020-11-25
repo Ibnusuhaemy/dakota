@@ -370,6 +370,14 @@
                 @include media-query(md) {
                     left: 144px;
                 }
+
+                @include media-query(sm-2) {
+                    left: 74px;
+                }
+
+                @include media-query(sm) {
+
+                }
             }
             
             &:after{
@@ -457,6 +465,11 @@
     
     &__slider-container{
         max-width: 960px;
+
+        .js-partner-slider {
+            max-width: 400px;
+            margin: auto;
+        }
     }
 
     &__title{
