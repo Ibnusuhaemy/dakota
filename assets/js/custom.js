@@ -9,7 +9,10 @@ $('.js-hero-slider').slick({
 });
 
 // Testimonial Slider
-$('.js-testi-slider').slick();
+$('.js-testi-slider').slick({
+  infinite: true,
+  autoplay: true
+});
 
 // Partner Logo Slider
 $('.js-partner-slider').slick({
