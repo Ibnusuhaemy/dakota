@@ -4,7 +4,8 @@
 $('.js-hero-slider').slick({
   dots: true,
   slidesToShow: 1,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  autoplay: true
 });
 
 // Testimonial Slider
